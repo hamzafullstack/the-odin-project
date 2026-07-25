@@ -1,0 +1,31 @@
+<p><strong>Alignment (Flexbox) - Key Notes</strong></p>
+
+<ul>
+  <li><strong>justify-content</strong> → Aligns items on the <strong>main axis</strong>.</li>
+  <li><strong>align-items</strong> → Aligns items on the <strong>cross axis</strong>.</li>
+  <li><strong>gap</strong> → Creates space between flex items (better than margins for spacing).</li>
+  <li><strong>flex: 1</strong> makes items grow/shrink to fill available space.</li>
+  <li>Remove <code>flex: 1</code> if you want items to keep their own width.</li>
+  <li><code>justify-content: center;</code> → Centers items on the main axis.</li>
+  <li><code>justify-content: space-between;</code> → First & last items touch edges; equal space between items.</li>
+  <li><code>align-items: center;</code> → Centers items on the cross axis.</li>
+  <li>Changing <code>flex-direction</code> changes the meaning of the axes.</li>
+  <li><strong>row (default):</strong>
+    <ul>
+      <li>Main axis = Horizontal</li>
+      <li>Cross axis = Vertical</li>
+    </ul>
+  </li>
+  <li><strong>column:</strong>
+    <ul>
+      <li>Main axis = Vertical</li>
+      <li>Cross axis = Horizontal</li>
+    </ul>
+  </li>
+  <li>Always think <strong>Main Axis vs Cross Axis</strong>, not Horizontal vs Vertical.</li>
+  <li><strong>Perfect Centering:</strong>
+    <pre><code>display: flex;
+justify-content: center;
+align-items: center;</code></pre>
+  </li>
+</ul>

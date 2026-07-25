@@ -1,0 +1,213 @@
+<p><strong>🎯 Flexbox Cheat Sheet</strong></p>
+
+<h2>1. Parent (Flex Container) Properties</h2>
+
+<ul>
+  <li><strong>display: flex;</strong> → Turns an element into a flex container.</li>
+  <li><strong>flex-direction</strong> → Sets the main axis direction.
+    <ul>
+      <li>row (default)</li>
+      <li>row-reverse</li>
+      <li>column</li>
+      <li>column-reverse</li>
+    </ul>
+  </li>
+
+  <li><strong>flex-wrap</strong> → Controls wrapping.
+    <ul>
+      <li>nowrap (default)</li>
+      <li>wrap</li>
+      <li>wrap-reverse</li>
+    </ul>
+  </li>
+
+  <li><strong>flex-flow</strong> → Shorthand:
+    <pre><code>flex-flow: row wrap;</code></pre>
+  </li>
+
+  <li><strong>justify-content</strong> → Aligns items on the <strong>main axis</strong>.
+    <ul>
+      <li>flex-start</li>
+      <li>flex-end</li>
+      <li>center</li>
+      <li>space-between</li>
+      <li>space-around</li>
+      <li>space-evenly</li>
+    </ul>
+  </li>
+
+  <li><strong>align-items</strong> → Aligns items on the <strong>cross axis</strong>.
+    <ul>
+      <li>stretch (default)</li>
+      <li>flex-start</li>
+      <li>flex-end</li>
+      <li>center</li>
+      <li>baseline</li>
+    </ul>
+  </li>
+
+  <li><strong>align-content</strong> → Aligns multiple rows/columns (only works with wrapping).
+    <ul>
+      <li>stretch</li>
+      <li>center</li>
+      <li>space-between</li>
+      <li>space-around</li>
+      <li>space-evenly</li>
+    </ul>
+  </li>
+
+  <li><strong>gap</strong> → Space between flex items.</li>
+  <li><strong>row-gap</strong> → Vertical gap.</li>
+  <li><strong>column-gap</strong> → Horizontal gap.</li>
+</ul>
+
+<hr>
+
+<h2>2. Child (Flex Item) Properties</h2>
+
+<ul>
+  <li><strong>flex-grow</strong> → How much an item grows.</li>
+  <li><strong>flex-shrink</strong> → How much an item shrinks.</li>
+  <li><strong>flex-basis</strong> → Initial size before growing/shrinking.</li>
+
+  <li><strong>flex</strong> → Shorthand:
+    <pre><code>flex: grow shrink basis;</code></pre>
+
+Examples:
+<pre><code>flex: 1;
+flex: 2;
+flex: 1 1 auto;
+flex: 0 0 200px;</code></pre>
+  </li>
+
+  <li><strong>align-self</strong> → Overrides align-items for one item.
+    <ul>
+      <li>auto</li>
+      <li>flex-start</li>
+      <li>flex-end</li>
+      <li>center</li>
+      <li>stretch</li>
+      <li>baseline</li>
+    </ul>
+  </li>
+
+  <li><strong>order</strong> → Changes visual order.
+    <pre><code>order: -1;
+order: 1;
+order: 999;</code></pre>
+  </li>
+</ul>
+
+<hr>
+
+<h2>3. Most Common Patterns</h2>
+
+<p><strong>Center Everything</strong></p>
+
+<pre><code>display: flex;
+justify-content: center;
+align-items: center;</code></pre>
+
+<p><strong>Even Space</strong></p>
+
+<pre><code>justify-content: space-between;</code></pre>
+
+<p><strong>Equal Width Columns</strong></p>
+
+<pre><code>.item {
+    flex: 1;
+}</code></pre>
+
+<p><strong>Fixed Sidebar + Flexible Content</strong></p>
+
+<pre><code>.sidebar {
+    flex: 0 0 250px;
+}
+
+.content {
+    flex: 1;
+}</code></pre>
+
+<p><strong>Allow Wrapping</strong></p>
+
+<pre><code>display: flex;
+flex-wrap: wrap;
+gap: 20px;</code></pre>
+
+<hr>
+
+<h2>4. Axes Reminder</h2>
+
+<pre><code>flex-direction: row;
+
+Main Axis  → →
+Cross Axis ↓
+
+justify-content = Main Axis
+align-items     = Cross Axis
+</code></pre>
+
+<pre><code>flex-direction: column;
+
+Main Axis  ↓
+Cross Axis →
+
+justify-content = Main Axis
+align-items     = Cross Axis
+</code></pre>
+
+<hr>
+
+<h2>5. Flex Shorthand Quick Reference</h2>
+
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>flex: 1;</code></td>
+<td>Grow to fill available space.</td>
+</tr>
+
+<tr>
+<td><code>flex: 0;</code></td>
+<td>Don't grow.</td>
+</tr>
+
+<tr>
+<td><code>flex: auto;</code></td>
+<td>Grow and shrink automatically.</td>
+</tr>
+
+<tr>
+<td><code>flex: none;</code></td>
+<td>Fixed size.</td>
+</tr>
+
+<tr>
+<td><code>flex: 0 0 300px;</code></td>
+<td>Always 300px wide.</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<p><strong>🔥 Remember:</strong></p>
+
+<ul>
+<li>display:flex → Creates a flex container.</li>
+<li>justify-content → Main axis alignment.</li>
+<li>align-items → Cross axis alignment.</li>
+<li>gap → Space between items.</li>
+<li>flex → Grow • Shrink • Basis.</li>
+<li>order → Visual order.</li>
+<li>align-self → Override one item's alignment.</li>
+<li>Main axis changes with <code>flex-direction</code>.</li>
+</ul>
