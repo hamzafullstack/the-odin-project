@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Axes in css.</h1>
+    <h3>Axes</h3>
+    <p>The most confusing thing about flexbox is that it can work either horizontally or vertically, and some rules change a bit depending on which direction you are working with. The default direction for a flex container is horizontal, or row, but you can change the direction to vertical, or column</p>
+    <!-- Note: css source code will be in the stylesheet -->
+    <div class="flex-container"></div>
+    <p>No matter which direction you’re using, you need to think of your flex-containers as having 2 axes: the main axis and the cross axis. </p>
+    <p>flex-direction: row puts the main axis horizontal (left-to-right), and column puts the main axis vertical (top-to-bottom).</p>
+    <!-- code here for demo -->
+     <div class="container">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+</div>
+<!-- note: -->
+ <p>default setting is row for the flex-direction. you change to column if you want.</p>
+ <p><strong>Flex Direction - Key Notes</strong></p>
+
+<p>• <code>flex-direction: row</code> (default) → Items are arranged horizontally.</p>
+
+<p>• <code>flex-direction: column</code> → Items are arranged vertically.</p>
+
+<p><strong>Why <code>flex: 1</code> breaks with <code>column</code>:</strong></p>
+
+<p>• <code>flex: 1</code> = <code>flex: 1 1 0</code>.</p>
+
+<p>• <code>flex-basis: 0</code> starts the size calculation from 0.</p>
+
+<p>• Empty <code>&lt;div&gt;</code> elements have 0 height, so they collapse.</p>
+
+<p>• The defined <code>height</code> is ignored because the flex basis starts from 0.</p>
+
+<p><strong>Fixes:</strong></p>
+
+<p>• Use <code>flex: 1 1 auto;</code> to respect the element's height.</p>
+
+<p>• Or use <code>flex-grow: 1;</code>.</p>
+
+<p>• Or set a fixed <code>height</code> on the parent container.</p>
+
+<p><strong>Important:</strong></p>
+
+<p>• In <code>row</code>, <code>flex-basis</code> controls width.</p>
+
+<p>• In <code>column</code>, <code>flex-basis</code> controls height.</p>
+
+<p><strong>Why <code>row</code> usually works:</strong></p>
+
+<p>• Block elements naturally take 100% width.</p>
+
+<p>• Their height depends on their content.</p>
+
+<p>• Empty elements have 0 height, which causes collapsing in <code>column</code>.</p>
+
+<p><strong>Extra:</strong></p>
+
+<p>• <code>flex-direction</code> may behave differently in right-to-left or vertical writing systems.</p> 
 </body>
 </html>
