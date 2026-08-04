@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Conditionals Notes</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        color:#222;
+        line-height:1.7;
+        max-width:900px;
+        margin:40px auto;
+        padding:20px;
+    }
+
+    h1,h2{
+        color:olive;
+    }
+
+    code{
+        background:#eee;
+        padding:2px 5px;
+        border-radius:4px;
+    }
+
+    pre{
+        background:#222;
+        color:#eee;
+        padding:15px;
+        border-radius:8px;
+        overflow:auto;
+    }
+
+    ul{
+        padding-left:20px;
+    }
+
+    .note{
+        background:#fff8dc;
+        border-left:5px solid orange;
+        padding:10px;
+        margin:15px 0;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>JavaScript Conditionals</h1>
+
+<p>
+Conditionals allow your program to make decisions based on whether a condition is
+<code>true</code> or <code>false</code>. They control the flow of execution, allowing
+different code to run under different circumstances.
+</p>
+
+<hr>
+
+<h2>Types of Conditionals</h2>
+
+<ul>
+    <li><code>if</code></li>
+    <li><code>else</code></li>
+    <li><code>else if</code></li>
+    <li><code>switch</code></li>
+    <li><code>ternary operator ( ? : )</code></li>
+</ul>
+
+<hr>
+
+<h2>Common Use Cases</h2>
+
+<ul>
+    <li>Login authentication</li>
+    <li>Age verification</li>
+    <li>Checking passwords</li>
+    <li>Displaying different UI elements</li>
+    <li>Form validation</li>
+    <li>Game logic</li>
+    <li>Role-based access (Admin/User)</li>
+    <li>Error handling</li>
+</ul>
+
+<hr>
+
+<h2>Example</h2>
+
+<pre>
+let age = 20;
+
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+</pre>
+
+<hr>
+
+<h2>Facts</h2>
+
+<ul>
+    <li>Every condition evaluates to either <code>true</code> or <code>false</code>.</li>
+    <li>JavaScript automatically converts values to boolean when needed (truthy/falsy).</li>
+    <li><code>switch</code> is useful when comparing one variable against many fixed values.</li>
+    <li>The ternary operator is a shorter version of a simple <code>if...else</code>.</li>
+    <li>Conditionals can be nested inside one another.</li>
+</ul>
+
+<hr>
+
+<h2>Truthy Values</h2>
+
+<p>These behave like <code>true</code>:</p>
+
+<pre>
+true
+1
+-1
+"Hello"
+[]
+{}
+function(){}
+</pre>
+
+<hr>
+
+<h2>Falsy Values</h2>
+
+<p>Only these values are falsy:</p>
+
+<pre>
+false
+0
+-0
+0n
+""
+null
+undefined
+NaN
+</pre>
+
+<hr>
+
+<h2>Tips & Tricks</h2>
+
+<ul>
+    <li>Use <code>===</code> instead of <code>==</code> to avoid automatic type conversion.</li>
+    <li>Avoid deeply nested <code>if</code> statements; use <code>else if</code>, <code>switch</code>, or early <code>return</code> when possible.</li>
+    <li>Use meaningful variable names like <code>isLoggedIn</code> or <code>hasPermission</code>.</li>
+    <li>Use the ternary operator only for simple decisions.</li>
+    <li>Remember: <code>=</code> assigns a value, while <code>===</code> compares values and types.</li>
+</ul>
+
+<div class="note">
+<strong>Quick Memory Trick</strong><br><br>
+
+if → One condition<br>
+else if → Multiple conditions<br>
+else → Default case<br>
+switch → Many fixed values<br>
+?: → Short one-line if...else
+</div>
+
+</body>
+</html>
