@@ -45,4 +45,27 @@ if (userAge < 26) {
 }
 
 // Conditional operator ‘?’
+// The so-called “conditional” or “question mark” operator lets us do that in a shorter and simpler way.
+// let result = condition ? value1 : value2;
+let accessAllowed = (age > 18) ? true : false;
+// remember no need to wrap it into (parentheses) but recommanded.
+
+// Multiple ‘?’
+// You can use a sequence of ? operator 
+
+// Non-traditional use of ‘?’
+// Sometimes the question mark ? is used as a replacement for if:
+
+let company = 'netscape'; //browser.
+(company == 'netscape') ?
+console.log('right') : console.log('wrong');
+// its not recommanded to use such confusing code style always write a readable syntax so normal block if else wins.
+
+// Finished.. exercise in new file insha ALLAH.
+// You can learn more about the topic on https://javascript.info/ifelse
+
+// NOTE: ⚠️ warning 
+// This is just my own practice code, so it's written this way. JavaScript.info uses the `alert()` function, but I have Node.js installed, so I run my code directly in the terminal instead. That's why I'm not using browser-specific functions.
+
+// I'm a bit lazy—I don't feel like opening the browser, running the code, opening DevTools, and all that. I like to keep things clean and simple, so don't get confused.
 
