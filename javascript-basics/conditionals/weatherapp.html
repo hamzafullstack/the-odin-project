@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2563eb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        select:focus {
+            border-color: #2563eb;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eef4ff;
+            border-left: 5px solid #2563eb;
+            border-radius: 6px;
+            line-height: 1.7;
+            min-height: 90px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌦 Weather App</h1>
+
+        <label for="weather">
+            Select the weather type today:
+        </label>
+
+        <select id="weather">
+            <option value="">Make a choice</option>
+            <option value="sunny">Sunny ☀️</option>
+            <option value="rainy">Rainy 🌧️</option>
+            <option value="snowing">Snowing ❄️</option>
+            <option value="overcast">Overcast ☁️</option>
+        </select>
+
+        <p></p>
+
+    </div>
+
+    <script src="mdn-weatherapp.js"></script>
+
+</body>
+</html>
