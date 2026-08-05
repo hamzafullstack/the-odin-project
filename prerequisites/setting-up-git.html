@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Odin Project - Setting Up Git Notes</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+header{
+    background:#24292e;
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+section{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+h2{
+    color:#24292e;
+    margin-bottom:15px;
+}
+
+.card{
+    background:#f8f9fa;
+    border-left:5px solid #24292e;
+    padding:18px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin:8px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#24292e;
+    color:white;
+}
+
+code{
+    background:#eee;
+    padding:3px 6px;
+    border-radius:4px;
+}
+
+pre{
+    background:#1e1e1e;
+    color:#fff;
+    padding:15px;
+    overflow:auto;
+    border-radius:8px;
+}
+
+blockquote{
+    background:#eef8f1;
+    border-left:6px solid #198754;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    color:#666;
+    margin:30px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1> The Odin Project</h1>
+<p><strong>Foundations – Setting Up Git</strong></p>
+</header>
+
+<section>
+
+<h2> Overview</h2>
+
+<p>
+Git is a Version Control System (VCS) used to track changes in your projects.
+GitHub is an online platform where Git repositories are stored, shared, and
+collaborated on.
+</p>
+
+</section>
+
+<section>
+
+<h2> Learning Objectives</h2>
+
+<div class="card">
+<h3>Understand Git</h3>
+
+<ul>
+<li>Know what Git is.</li>
+<li>Understand why version control is important.</li>
+<li>Track changes to projects.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>Understand GitHub</h3>
+
+<ul>
+<li>Create repositories.</li>
+<li>Host projects online.</li>
+<li>Collaborate with other developers.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>Configure Git</h3>
+
+<ul>
+<li>Set username.</li>
+<li>Set email address.</li>
+<li>Choose <strong>main</strong> as the default branch.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>Connect GitHub using SSH</h3>
+
+<ul>
+<li>Create SSH key pair.</li>
+<li>Add public key to GitHub.</li>
+<li>Authenticate without typing password every push.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2> Git Configuration</h2>
+
+<pre>
+git config --global user.name "Your Name"
+
+git config --global user.email your-email@example.com
+
+git config --global init.defaultBranch main
+</pre>
+
+<p><strong>Verify:</strong></p>
+
+<pre>
+git config --get user.name
+
+git config --get user.email
+
+git config --global --list
+</pre>
+
+</section>
+
+<section>
+
+<h2> SSH Key</h2>
+
+<p>
+SSH (Secure Shell) uses public-key cryptography to securely identify your
+computer without sending your password every time.
+</p>
+
+<table>
+
+<tr>
+<th>Key</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Private Key</td>
+<td>Stored on your computer. Never share it.</td>
+</tr>
+
+<tr>
+<td>Public Key (.pub)</td>
+<td>Upload to GitHub.</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2> Generate SSH Key</h2>
+
+<pre>
+ssh-keygen -t ed25519
+</pre>
+
+<p>During setup:</p>
+
+<ul>
+<li>Press Enter for default location.</li>
+<li>Passphrase is optional.</li>
+<li>Press Enter twice if you don't want one.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Copy Public Key</h2>
+
+<pre>
+cat ~/.ssh/id_ed25519.pub
+</pre>
+
+<p>
+Copy everything from <code>ssh-ed25519</code> until the end of the line.
+</p>
+
+</section>
+
+<section>
+
+<h2> Add SSH Key to GitHub</h2>
+
+<ol>
+
+<li>GitHub → Settings</li>
+<li>SSH and GPG Keys</li>
+<li>New SSH Key</li>
+<li>Title (Example: ThinkPad T480)</li>
+<li>Key Type → Authentication Key</li>
+<li>Paste Public Key</li>
+
+</ol>
+
+</section>
+
+<section>
+
+<h2> Test SSH Connection</h2>
+
+<pre>
+ssh -T git@github.com
+</pre>
+
+<p>Expected Output:</p>
+
+<pre>
+Hi username!
+You've successfully authenticated,
+but GitHub does not provide shell access.
+</pre>
+
+</section>
+
+<section>
+
+<h2> Important Notes</h2>
+
+<ul>
+<li>Never share your private key.</li>
+<li>Only upload the <code>.pub</code> key.</li>
+<li>SSH removes the need to type your password every push.</li>
+<li>You can create different SSH keys for different computers.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Assignment Summary</h2>
+
+<div class="card">
+
+<h3>1. Install Git</h3>
+
+<p>
+Install Git and verify it is working correctly.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>2. Create GitHub Account</h3>
+
+<p>
+Create a GitHub account and optionally enable private email and 2FA.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>3. Configure Git</h3>
+
+<p>
+Set your username, email, and default branch.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>4. Generate SSH Key</h3>
+
+<p>
+Create an Ed25519 SSH key for secure authentication.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>5. Add SSH Key to GitHub</h3>
+
+<p>
+Upload your public SSH key to GitHub.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>6. Test the Connection</h3>
+
+<p>
+Verify the SSH connection using
+<code>ssh -T git@github.com</code>.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2> Knowledge Check</h2>
+
+<ul>
+
+<li>What is Git?</li>
+<li>What is GitHub?</li>
+<li>Why is Git configuration required?</li>
+<li>Why do we use SSH instead of passwords?</li>
+<li>What's the difference between public and private SSH keys?</li>
+<li>Which key should be uploaded to GitHub?</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2> Quick Revision</h2>
+
+<ul>
+
+<li>✅ Git tracks project history.</li>
+<li>✅ GitHub hosts Git repositories.</li>
+<li>✅ Configure Git once per computer.</li>
+<li>✅ Generate an Ed25519 SSH key.</li>
+<li>✅ Upload only the public key.</li>
+<li>✅ Test authentication using <code>ssh -T git@github.com</code>.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2> Key Takeaway</h2>
+
+<blockquote>
+
+Git keeps your project's history.
+GitHub stores that history online.
+SSH securely connects your computer to GitHub without repeatedly entering passwords.
+
+</blockquote>
+
+</section>
+
+<footer>
+
+<p> Source: The Odin Project – Foundations (Setting Up Git)</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>

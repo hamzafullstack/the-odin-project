@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Odin Project - Command Line Basics Notes</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+header{
+    background:#198754;
+    color:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+section{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+h2{
+    color:#198754;
+    margin-bottom:15px;
+}
+
+.card{
+    background:#f8f9fa;
+    border-left:5px solid #198754;
+    padding:18px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin:8px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#198754;
+    color:white;
+}
+
+code{
+    background:#eee;
+    padding:2px 6px;
+    border-radius:4px;
+}
+
+blockquote{
+    background:#eef8f1;
+    border-left:6px solid #198754;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+    font-style:italic;
+}
+
+footer{
+    text-align:center;
+    color:#666;
+    margin:30px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1> The Odin Project</h1>
+<p><strong>Foundations – Command Line Basics</strong></p>
+</header>
+
+<section>
+
+<h2> Overview</h2>
+
+<p>
+The command line (terminal) allows developers to interact directly with the operating system using text commands. It is an essential tool for web development because many developer tools, Git, Node.js, and servers are operated through the terminal.
+</p>
+
+</section>
+
+<section>
+
+<h2> Learning Objectives</h2>
+
+<div class="card">
+<h3>1. Understand the Command Line</h3>
+
+<ul>
+<li>Know what a terminal is.</li>
+<li>Understand why developers use it.</li>
+<li>Learn how commands interact with the operating system.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>2. Navigate the File System</h3>
+
+<ul>
+<li>Move between folders.</li>
+<li>Check your current location.</li>
+<li>Create and delete directories.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>3. Manage Files</h3>
+
+<ul>
+<li>Create files.</li>
+<li>Copy files.</li>
+<li>Move or rename files.</li>
+<li>Delete files safely.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2> Essential Commands</h2>
+
+<table>
+
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>pwd</code></td>
+<td>Show current directory.</td>
+</tr>
+
+<tr>
+<td><code>ls</code></td>
+<td>List files and folders.</td>
+</tr>
+
+<tr>
+<td><code>cd</code></td>
+<td>Change directory.</td>
+</tr>
+
+<tr>
+<td><code>mkdir</code></td>
+<td>Create a new folder.</td>
+</tr>
+
+<tr>
+<td><code>touch</code></td>
+<td>Create an empty file.</td>
+</tr>
+
+<tr>
+<td><code>cp</code></td>
+<td>Copy files or folders.</td>
+</tr>
+
+<tr>
+<td><code>mv</code></td>
+<td>Move or rename files.</td>
+</tr>
+
+<tr>
+<td><code>rm</code></td>
+<td>Delete files.</td>
+</tr>
+
+<tr>
+<td><code>clear</code></td>
+<td>Clear terminal screen.</td>
+</tr>
+
+<tr>
+<td><code>man</code></td>
+<td>Open command manual.</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2> Important Notes</h2>
+
+<ul>
+<li>Be careful with <code>rm</code> because deleted files usually cannot be recovered.</li>
+<li>Read command documentation using <code>man</code>.</li>
+<li>Practice commands regularly to build muscle memory.</li>
+<li>The terminal is faster than graphical file management for many tasks.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Why Developers Use the Terminal</h2>
+
+<ul>
+<li>Faster workflow.</li>
+<li>Works on remote servers.</li>
+<li>Required for Git and Node.js.</li>
+<li>Automates repetitive tasks.</li>
+<li>Industry standard skill.</li>
+<li>Available on Linux, macOS, and Windows.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Assignment Summary</h2>
+
+<div class="card">
+<h3>1. Read the Command Line Crash Course</h3>
+
+<p>
+Understand how the terminal works and why it is an important developer tool.
+</p>
+
+</div>
+
+<div class="card">
+<h3>2. Practice Basic Commands</h3>
+
+<p>
+Navigate folders, create files, rename files, copy files, and delete files using terminal commands.
+</p>
+
+</div>
+
+<div class="card">
+<h3>3. Complete the Exercises</h3>
+
+<p>
+Follow the practice exercises until you are comfortable using the command line without relying on a graphical interface.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2> Knowledge Check</h2>
+
+<ul>
+<li>What is the purpose of the command line?</li>
+<li>How do you check your current directory?</li>
+<li>Which command lists files?</li>
+<li>How do you create a folder?</li>
+<li>How do you rename a file?</li>
+<li>Why should you be careful with <code>rm</code>?</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Quick Revision</h2>
+
+<ul>
+<li>✅ Learn terminal navigation.</li>
+<li>✅ Practice common commands daily.</li>
+<li>✅ Use the terminal for Git and Node.js.</li>
+<li>✅ Read command manuals when unsure.</li>
+<li>✅ Speed comes with repetition.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2> Key Takeaway</h2>
+
+<blockquote>
+The command line is one of the most valuable tools in a developer's workflow.
+Mastering a handful of basic commands will save countless hours and make working
+with development tools much easier.
+</blockquote>
+
+</section>
+
+<footer>
+
+<p> Source: The Odin Project – Foundations (Command Line Basics)</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
