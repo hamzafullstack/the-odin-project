@@ -88,5 +88,21 @@ let x = 1;
 // avoid using && operator for if statement.
 
 // NOT ! (NOT) operator.
+// The boolean NOT operator is represented with an exclamation sign !.
+// syntax :-->>> result = !value;
 
+console.log( !true ); // false
+console.log( !0 ); // true
 
+// A double NOT !! is sometimes used for converting a value to boolean type:
+console.log( !!"non-empty string" ); // true
+console.log( !!null ); // false.
+
+// a built-in Boolean function:
+console.log( Boolean("non-empty string") ); // true.
+console.log( Boolean(null) ); // false.
+// NOTE: The precedence of NOT ! is the highest of all logical operators, so it always executes first, before && or ||.
+
+// Finish.
+// remember: the link is given above if you want to read more and want to understand better visit jsinfo and learn.
+// exercise solution will be in a seperate File. 
