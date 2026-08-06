@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript.info - Task 9</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    .importance {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 12px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 25px 0 10px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      background: #fff8db;
+      border-left: 5px solid #facc15;
+      padding: 15px;
+      margin-top: 25px;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 35px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Task 9 – Check the Login</h1>
+
+    <div class="importance">
+      Importance: ★★★
+    </div>
+
+    <p>
+      Write the code which asks for a login using
+      <code>prompt()</code>.
+    </p>
+
+    <h2>Requirements</h2>
+
+    <ul>
+      <li>If the visitor enters <strong>"Admin"</strong>, then ask for a password.</li>
+      <li>If the input is an empty string or the user presses <strong>Esc</strong>, show <strong>"Canceled"</strong>.</li>
+      <li>If the visitor enters any other login, show <strong>"I don't know you"</strong>.</li>
+    </ul>
+
+    <h2>Password Check</h2>
+
+    <ul>
+      <li>If the password is <strong>"TheMaster"</strong>, show <strong>"Welcome!"</strong>.</li>
+      <li>If another password is entered, show <strong>"Wrong password"</strong>.</li>
+      <li>If the password is empty or the prompt is canceled, show <strong>"Canceled"</strong>.</li>
+    </ul>
+
+    <h2>Instructions</h2>
+
+    <ul>
+      <li>Use <strong>nested if</strong> statements.</li>
+      <li>Keep the code clean and readable.</li>
+      <li>Do not use other control structures.</li>
+    </ul>
+
+    <div class="note">
+      <strong>Hint:</strong><br><br>
+      An empty input in <code>prompt()</code> returns
+      <code>""</code> (empty string).<br>
+      Pressing <strong>Esc</strong> returns <code>null</code>.
+    </div>
+
+    <footer>
+      Solution file: <strong>tasknine.js</strong>
+    </footer>
+
+  </div>
+  <script src="tasknine.js"></script>
+
+</body>
+</html>
