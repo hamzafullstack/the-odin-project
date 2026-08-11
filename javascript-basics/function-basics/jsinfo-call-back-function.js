@@ -14,3 +14,16 @@ function showCancel() {
 }
 //functions showOk, showCancel are passed as arguments to ask
 ask('Do you agree?', showOk, showCancel);
+
+// We can use Function Expressions to write an equivalent, shorter function:
+
+// func expressions 
+function asking(q, y, n) {
+    if (confirm(q)) y()
+        else n();
+}
+asking(
+    'do you agree?',
+    function() { alert('agree'); },
+    function() { alert('disagree'); }
+);
