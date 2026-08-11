@@ -65,3 +65,29 @@ function showRejection() {
 }
 
 ask(18, showOk, showRejection);
+
+
+// Function Expression vs Function Declaration
+// Function Declaration: a function, declared as a separate statement, in the main code flow:
+
+// function declaration
+function addTwo(a, b) {
+    return a + b;
+}
+
+// he function is created on the right side of the “assignment expression” =:
+let addingTwo = function(c, d) {
+    return c + d;
+};
+
+// A Function Expression is created when the execution reaches it and is usable only from that moment.
+
+// A Function Declaration can be called earlier than it is defined.
+
+
+// Function Expressions are created when the execution reaches them. That would happen only in the line (*). Too late.
+
+// In strict mode, when a Function Declaration is within a code block, it’s visible everywhere inside that block. But not outside of it.
+
+// read more about function declaration vs function expressions on javascript.info 
+// https://javascript.info/function-expressions#function-expression-vs-function-declaration
