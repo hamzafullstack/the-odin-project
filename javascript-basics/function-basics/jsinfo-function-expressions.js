@@ -47,3 +47,21 @@ let countryName = country;
 
 // Why is there a semicolon at the end?
 // . The semicolon ; is recommended at the end of the statement, it’s not a part of the function syntax.,
+
+// call back function 
+
+// call back practice on nodejs without confirm() function.
+function ask(age, yes, no) {
+    if (age >= 18) yes();
+    else no();
+}
+
+function showOk() {
+    console.log('جاؤ اور مزے کرو۔');
+}
+
+function showRejection() {
+    console.log('لَتینا، تمہارے لیے نہیں۔ بڑا ہو جا، پھر آنا۔');
+}
+
+ask(18, showOk, showRejection);
