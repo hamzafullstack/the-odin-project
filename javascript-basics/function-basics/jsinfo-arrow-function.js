@@ -29,3 +29,13 @@ let welcome = (age < 18) ?
 () => console.log('greetings');
 
 welcome();
+
+// Multiline arrow functions
+let sum = (e, f) => {
+    let result = e + f;
+    return result;
+};
+console.log(sum(1, 5));
+
+// Summary
+// Arrow functions are handy for simple actions, especially for one-liners. 
