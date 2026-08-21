@@ -56,7 +56,7 @@ while(jupyter < 3) {
 
 // Task~~7 Output prime numbers
 // damn! this was hard....
-myOuterLoop: for (let i = 1; i <= 30; i++) {
+for (let i = 1; i <= 30; i++) {
     let prime = i > 1;
     for(let j = 2; j <= Math.sqrt(i); j++) {
         if (i % j == 0){
@@ -73,3 +73,6 @@ myOuterLoop: for (let i = 1; i <= 30; i++) {
 // Source - https://stackoverflow.com/a/68192996
 // Posted by L. Monty, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-08-21, License - CC BY-SA 4.0
+
+
+// NOTE: later i checked the solution tab, and javascript info solution is very optimized and very clean.. its a better to understand and give that solution a try.
