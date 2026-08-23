@@ -22,3 +22,7 @@ console.log(styles);
 
 // Task~~4 Sum input numbers
 // this solution requires an html page so i will solve in the html file.
+// ---- pretty challenging..
+
+// Task~~5 
+// Note: its littlebit hard i can do it but it take alot of time and i think for now i should let it go. i'll come back later on this after completing the array and loops chapter on the odin project.. insha ALLAH
