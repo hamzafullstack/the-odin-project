@@ -69,3 +69,18 @@ console.log(test.slice(1, 3)); // copy from 1 to 3.
 console.log(test.slice(-2)); // s,t copy from -2 till end
 // call it without arguments: test.slice() creates a copy of array. That’s often used to obtain a copy for further transformations that should not affect the original array.
 
+// ========== Concat Method ==========
+// The method concat creates a new array that includes values from other arrays and additional items.
+
+// arr.concat(arg1, arg2...)
+
+// it accepts any number of arguments either arr or value.
+
+let arrConcate = [1,2];
+console.log(arrConcate.concat([3,4])); // 1234.
+arrConcate.concat([5,6], [7,8]);
+arrConcate.concat([9,10], 11, 12);
+console.log(arrConcate); //
+// Normally, it only copies elements from arrays. Other objects,
+// if an array-like object has a special Symbol.isConcatSpreadable property, then it’s treated as an array by concat: its elements are added instead
+
