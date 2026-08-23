@@ -84,3 +84,14 @@ console.log(arrConcate); //
 // Normally, it only copies elements from arrays. Other objects,
 // if an array-like object has a special Symbol.isConcatSpreadable property, then it’s treated as an array by concat: its elements are added instead
 
+// ======== iterate: forEach ==========
+// the foreach method allows to run a function for every element of the array.
+
+// for each call console.log().
+// ['Karachi', 'Lahore', 'Islamabad'].forEach(alert);
+
+["karachi", 'Lahore', 'Skardu'].forEach((item, index, array) => {
+    console.log(`${item} is at index ${index} in ${array}`);
+});
+
+// The result of the function (if it returns any) is thrown away and ignored
