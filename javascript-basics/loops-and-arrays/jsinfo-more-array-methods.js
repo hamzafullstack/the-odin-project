@@ -154,3 +154,16 @@ console.log(usersExtra.findIndex(user => user.name == 'John')); // 0
 // find the index of the last john.
 console.log(usersExtra.findLastIndex(user => user.name == 'John')); // 3
 
+// ===== filter () ========
+
+// similar to find() but filter returns an array of all matching elements
+
+let friends = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+// returns array of the first two friends
+let someFriends = friends.filter(item => item.id < 3);
+console.log(someFriends.length); // 2
