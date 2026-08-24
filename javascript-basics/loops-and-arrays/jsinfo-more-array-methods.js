@@ -124,4 +124,33 @@ console.log(nan.indexOf(NaN)); // -1 wrong, should be 0
 console.log(nan.includes(NaN)); // true,
 // includes recently added to js thats why uses more up to date comparison algorthms internally.
 
+// -----find and findIndex/findLastIndex-------
+
+//find() method is useful when you have array of objects.
+
+// If it returns true, the search is stopped, the item is returned. If nothing is found, undefined is returned.
+
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+let user = users.find(item => item.id == 1);
+console.log(user.name); // john.
+// in real life, arrays of objects are a common thing, so the find method is very useful.
+
+// findindex() returns the index where element was found instead of element itself. -1 is returned if nothing found
+
+// findlastindex() is like findindex() but searches from right to left similar to lastindexof().
+
+let usersExtra = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"},
+  {id: 4, name: "John"}
+];
+// find the index of the first john.
+console.log(usersExtra.findIndex(user => user.name == 'John')); // 0
+// find the index of the last john.
+console.log(usersExtra.findLastIndex(user => user.name == 'John')); // 3
 
