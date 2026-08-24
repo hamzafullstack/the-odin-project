@@ -182,3 +182,43 @@ let sortnum = [1,2,5,3,4];
 sortnum.sort();
 console.log(sortnum); // [ 1, 2, 3, 4, 5 ]
 // The items are sorted as strings by default.
+
+// === reverse() ====
+// reverse method  reverse the order of the elements.
+
+let myNums = [1,2,3,4,5,6];
+myNums.reverse();
+console.log(myNums); // 6,5,4,3,2,1
+// It also returns the array after the reversal.
+
+// ==== split and join ======
+// very useful in real world day to day programming
+let userNames = 'Hamza, Kashif, Shoaib';
+let fix = userNames.split(', '); // splits comma
+for (let name of fix) {
+    console.log(`A message to ${name}.`);
+}
+
+// join() does the reverse to split it creates a string items joined by glue between them.
+// 
+// let myStr = userNames.join(';'); // hamza;kashif;shoaib
+
+// ==== reduce/reduce/right
+// reduce and reduceright they are used to calculate a single value based on the array.
+
+let numtwo = [1,2,3,4,5];
+let result = numtwo.reduce((sum, current) => sum + current, 0);
+console.log(result); // 15.
+
+// The method arr.reduceRight does the same but goes from right to left.
+
+// ====== array.isarray =======
+// Arrays do not form a separate language type. They are based on objects
+// that: Array.isArray(value). It returns true if the value is an array, and false otherwise.
+
+console.log(Array.isArray([])); // true
+console.log(Array.isArray({})); // false
+
+// ===Most methods support “thisArg”===
+
+// Almost all array methods that call functions – like find, filter, map, with a notable exception of sort, accept an optional additional parameter thisArg.
