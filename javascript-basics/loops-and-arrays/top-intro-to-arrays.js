@@ -76,3 +76,15 @@ const productOfAllNums = items.reduce((total, currentItem) => {
     return total * currentItem;
 }, 1);
 console.log(productOfAllNums); // 120
+
+// ==== Exercise ====
+// Let’s do some quick practice before your assignment! Rewrite the sumOfTripledEvens(array) function using these three methods. Once you are finished and you’ve tested that your function works correctly, check out the solution below.
+
+// ==== Solution ====
+
+function sum_of_tripled_evens(array) {
+    return array.filter((fil) => fil % 2 === 0).map((ma) => ma * 3).reduce((total, items) => {
+        return total + items;
+    });
+}
+console.log(sum_of_tripled_evens([1,2,3,4,5,6,7])); // 36
