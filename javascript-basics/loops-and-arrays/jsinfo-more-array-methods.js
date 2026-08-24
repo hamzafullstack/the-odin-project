@@ -167,3 +167,18 @@ let friends = [
 // returns array of the first two friends
 let someFriends = friends.filter(item => item.id < 3);
 console.log(someFriends.length); // 2
+
+// === Transform an Array =====
+// methods that transform and reorder an array.
+// map method is one of the most useful and often used.
+
+let lengths = ['Bilbo', "Nazgul", 'Gandalf'].map(item => item.length);
+console.log(lengths);
+
+// ==== sort() =====
+// sorts the array in place, changing its element order.
+let sortnum = [1,2,5,3,4];
+// method reorders the content
+sortnum.sort();
+console.log(sortnum); // [ 1, 2, 3, 4, 5 ]
+// The items are sorted as strings by default.
