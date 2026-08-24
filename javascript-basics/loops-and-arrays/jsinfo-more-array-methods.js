@@ -95,3 +95,33 @@ console.log(arrConcate); //
 });
 
 // The result of the function (if it returns any) is thrown away and ignored
+
+// ======== Searching in Array ==========
+// let's  discover methods that search in an array.
+
+// indexOf/lastIndexOf and includes
+// indexof() and includes() have similar syntax 
+// indexof(item, from); ~return index where it found otherwise -1
+// includes(item, from); ~ true if found.
+
+// usually these methods are used with only one arg the item to search. by default the search is from beginning.
+
+let search = [1,2,3, false];
+console.log(search.indexOf(0)); // 1
+console.log(search.indexOf(false)); // 3
+console.log(search.indexOf(null)); // -1
+// indexof() uses === strict equality for comparison.
+
+// if we want to check if item exists in the array and don't need the index then include() method is preferred
+let fruits = ['Apple', 'Mango', 'Grape', 'Apple'];
+// lastindexof() is the same but looks for from right to left.
+console.log(fruits.indexOf('Apple')); // first apple
+console.log(fruits.lastIndexOf('Apple')); // last apple
+
+// The includes() Method handles NaN correctly.
+const nan = [NaN]; // NaN in Array
+console.log(nan.indexOf(NaN)); // -1 wrong, should be 0
+console.log(nan.includes(NaN)); // true,
+// includes recently added to js thats why uses more up to date comparison algorthms internally.
+
+
