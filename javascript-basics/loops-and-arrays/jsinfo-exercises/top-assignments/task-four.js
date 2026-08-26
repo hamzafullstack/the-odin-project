@@ -10,7 +10,7 @@ let arr = [5, 2, 1, -10, 8];
 
 arr.sort((a, b) => b - a);
 
-alert( arr );
+console.log( arr );
 
 
 // To memorize this, remember that (a, b) => a - b sorts numbers in ascending order. (MDN-docs)
