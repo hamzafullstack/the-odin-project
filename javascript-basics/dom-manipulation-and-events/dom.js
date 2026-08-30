@@ -39,3 +39,21 @@ console.log(displays);
 
 // spread operator:: 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+// Element creation
+// document.createElement(tagName, [Option])
+// creates a new element of tag type tagname. [option] in this case means you can add some optional parameters to the function.
+const div2 = document.createElement('div');
+// this function does not put your new element into the dom, it creates it in the memory.
+// so that you can manipulate the elements (by adding styles, classes, ids, text, etc)
+
+// append elements 
+// parentNode.appendChild(childNode)
+// appends childNode as the last child of parentNode.
+
+// parentNode.insertBefore(newNode, referenceNode)
+//inserts newNode into parentNode before referenceNode.
+
+// remove elements 
+// parentNode.removeChild(child);
+//remove child from parentnode on the dom and returns reference to child.
