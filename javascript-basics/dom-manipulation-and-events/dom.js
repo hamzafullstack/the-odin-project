@@ -92,3 +92,30 @@ ndiv.removeAttribute('id');
 
 // more about attribute on MDN-docs
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes
+
+
+// working with classes.
+// add class new to the your new div 
+const newDiv = document.createElement('div');
+newDiv.classList.add('new');
+// remove new from the class from div 
+newDiv.classList.remove('new');
+// if div doesn't have class "active" then add it or if does, the remove it.
+newDiv.classList.toggle('active');
+
+// it is often standard (and cleaner) to toggle a css style rather than adding and removing inline css.
+
+// adding text content 
+// create a text node containing "hello world!" and inserts it in div
+newDiv.textContent = 'Hello World!';
+
+// Adding HTML Content 
+// renders the html inside the div 
+newDiv.innerHTML = '<span> Hey World!</span>';
+
+// security risk of innerHTML 
+// using textContent is preferred over innerHTML for adding text as inner HTML should be used aparingly to avoid potential security risk.
+// always void XSS vulnerability 
+
+// https://www.youtube.com/watch?v=ns1LX6mEvyM
+
