@@ -57,3 +57,38 @@ const div2 = document.createElement('div');
 // remove elements 
 // parentNode.removeChild(child);
 //remove child from parentnode on the dom and returns reference to child.
+
+// Altering elements
+// this allows you to do many useful alterations, like adding, removing, or altering attributes, changing classes, adding inline style information and more.
+
+// create a new div referenced in the variable
+const ndiv = document.createElement('div');
+// adding inline style 
+// set the indicated style rule to the element in the div variable
+ndiv.style.color = 'blue';
+// set the entire inline style. 
+ndiv.setAttribute('style', 'color: blue; background: white;');
+
+// When Accessing a kebab-cased css property like background-color with js, you will need to either use camelCase with dot notation or bracket notation.
+// but property name must be a string....
+
+// bracket notation with kebab-case: also works
+ndiv.style["background-color"];
+
+// bracket notation with camelCase: also works
+ndiv.style["backgroundColor"];
+
+// equivalent to: div.style.background - color
+ndiv.style.background-color;
+
+// if id exists, update it to 'theDiv', else create an id with value "theDiv"
+ndiv.setAttribute('id', 'theDiv');
+
+// returns value of specified attribute, in this case 'theDiv'
+ndiv.setAttribute('id');
+
+// remove specified attribute 
+ndiv.removeAttribute('id');
+
+// more about attribute on MDN-docs
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes
