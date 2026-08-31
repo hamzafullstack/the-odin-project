@@ -119,3 +119,24 @@ newDiv.innerHTML = '<span> Hey World!</span>';
 
 // https://www.youtube.com/watch?v=ns1LX6mEvyM
 
+// Review  what we covered..
+
+// in the javascript  first we get a reference to the container div that already exists in our HTML. then we create a new div and store it in the variable content.
+// we add a class and some text to the content div and finally append that div to container. after the javascript code is run,
+
+// keep in mind that the javascript does not alter your HTML, But the DOM - your HTML file will look the same, but javascript changes what the browser renders.
+
+
+// Timing of Javascript...
+// to run your DOM properly include your javascript file at the bottom of your HTML file so that it gets run after the DOM nodes are parsed and created..
+
+// https://javascript.info/script-async-defer#defer
+// alternative : use defer and put in the head of html file. defer keyword load the file after the html is parsed,
+
+//<head>
+//  <script src="js-file.js" defer></script>
+// </head>
+
+
+
+
