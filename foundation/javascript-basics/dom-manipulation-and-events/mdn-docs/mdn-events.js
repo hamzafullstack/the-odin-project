@@ -76,3 +76,18 @@ btn1.addEventListener('click', changeBackground);
 myElement.addEventListener('click', functionA);
 myElement.addEventListener('click', functionB);
 // Both functions would now run when the element is clicked.
+
+// other event listener mechanisms
+// MDN docs recommand that we should use addEventListener() method because it's the most powerful method and scales best with more complex programs.
+
+// there are also two other event handlers that are no recommanded to use.
+
+// event handler properties 
+
+// onclick example 
+const btn2 = document.querySelector('#btn2');
+
+// btn2.onclick = () => {....}
+
+// Inline event handlers — don't use these
+// {/* <button onclick="bgChange()">Press me</button> */}
