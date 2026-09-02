@@ -73,8 +73,8 @@ btn1.addEventListener('click', changeBackground);
 // Adding multiple listeners for a single event
 // by making more than one call to addEventListener() you can have multiple handler functions running in response
 
-myElement.addEventListener('click', functionA);
-myElement.addEventListener('click', functionB);
+// myElement.addEventListener('click', functionA);
+// myElement.addEventListener('click', functionB);
 // Both functions would now run when the element is clicked.
 
 // other event listener mechanisms
@@ -86,8 +86,62 @@ myElement.addEventListener('click', functionB);
 
 // onclick example 
 const btn2 = document.querySelector('#btn2');
-
-// btn2.onclick = () => {....}
+function message(){
+    alert('smile');
+}
+btn2.onclick = message;
 
 // Inline event handlers — don't use these
 // {/* <button onclick="bgChange()">Press me</button> */}
+
+// event handler properties have disadvantages compared to addEventListener(). one of the most significant is that you can't add more than one listener for single event.
+
+// you use HTML Attributes inside event handlers but you should use, they are considered bad practice.
+
+// its not a good idea to mix up your HTML and Javascript. as it becomes hard to read. keep your JavaScript separated is a good practice, and if its separated you can apply it to multiple HTML documents.
+
+// even if its a single file still inline event handlers are not a good idea. when project grows it would quickly turn into a maintenance nightmare.
+
+// event listener for all buttons 
+const buttons = document.querySelectorAll('button');
+
+for(const button of buttons) {
+    button.addEventListener('click', changeBackground);
+}
+//many common server configuration will disallow inline javascript, as a security measure.
+
+// Event Objects.
+// you may see inside an event handler function you'll see a parameter specified with name such as event, evt, e this is called the event object...
+
+const btn3 = document.querySelector('#btn3');
+
+function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+}
+
+function bgChanged(e){
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    e.target.style.backgroundColor = rndCol;
+    console.log(e);
+}
+btn3.addEventListener('click', bgChanged);
+
+// target property 
+// e.target is a button itself. the target property of the event object is always a reference to the element the event occured upon. setting a random background color on the button not the page.
+
+// note:  you can use any name you like for the event object - you just need to choose a name that can reference inside the event handler function e, evt, event so on...
+
+
+// extra properties of event objects 
+// most event objects have a standard set of properties and methods
+
+const textBox = document.querySelector('#textBox');
+const output = document.querySelector('#output');
+textBox.addEventListener('keydown', (event) => {
+    output.textContent = `You Pressed "${event.key}".`;
+});
+
+// preventing default behaviors
+// you will come across a situation where you want to prevent an event from doing what it does by default. the most common example is that of a web form, like a custom registration form, 
+
+// chal yaaaar kal karte hai namaz ki tayari karte.
