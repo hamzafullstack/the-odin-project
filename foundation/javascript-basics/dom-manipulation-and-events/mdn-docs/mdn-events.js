@@ -68,3 +68,11 @@ btn1.addEventListener('click', changeBackground);
 // if you have added an eventlistener using addEventListener() you can remove it again if desired.. the most common way to do this is by using the removeEventListener() method.
 
 // its very useful for large complex programs, it can improve efficiency. also the ability to remove event handlers allows you to have the same button performing a different actions in different circumstances.
+
+
+// Adding multiple listeners for a single event
+// by making more than one call to addEventListener() you can have multiple handler functions running in response
+
+myElement.addEventListener('click', functionA);
+myElement.addEventListener('click', functionB);
+// Both functions would now run when the element is clicked.
