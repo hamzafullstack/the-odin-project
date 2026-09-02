@@ -54,3 +54,17 @@ function changeBackground() {
 // set addEventListener() on #btn1 param click + function
 btn1.addEventListener('click', changeBackground);
 
+// https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#listening_for_other_events
+
+// listening for other events 
+// there are many different events that can be fired by a button element,
+
+// - focus and blur - the color changes when the button is focused and unfocused.
+// dblclick - the color changes only when the button is doubleclicked.
+// mouseover and mouseout - the color changes when the mouse pointer hover over the button or when pointer moves away.
+// some events such as click are available nearly any element, other are more specific to the certain situations like play event is only for available on element that have play functionality such as <video>
+
+// removing listeners 
+// if you have added an eventlistener using addEventListener() you can remove it again if desired.. the most common way to do this is by using the removeEventListener() method.
+
+// its very useful for large complex programs, it can improve efficiency. also the ability to remove event handlers allows you to have the same button performing a different actions in different circumstances.
