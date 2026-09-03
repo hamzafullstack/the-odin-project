@@ -1,3 +1,4 @@
+// events 
 // https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events#events
 
 // events in javascript 
@@ -30,7 +31,7 @@ btn3.addEventListener('click', command);
 
 // using named functions can clean up your code considerably, and is a really good idea if the function is something that you are going to want to do in multiple places..
 
-const btn4 = addEventListener('#btn4');
+const btn4 = document.querySelector('#btn4');
 // passing param to the function that we are calling
 btn4.addEventListener('click', function (smile) {
     console.log(smile);
@@ -44,3 +45,23 @@ btn4.addEventListener('click', function (smile) {
 
 // learn more about event objects on MDN-docs 
 // https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#event_objects
+
+// attaching listeners to group of nodes.
+// this might seem like a lot of code if you're attaching lots of similar event listeners to many elements.
+// there are few ways to do it efficiently like we can use querySelectorAll('selector')...
+
+// button is a node list. looks & acts similar to an array
+const buttons = document.querySelectorAll('button');
+
+// forEach method to iterate through each function.
+buttons.forEach((button) => {
+    // for each one we add a click listener.
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
+
+// this is just the tip of the iceberg, when it comes to dom manipulation and event handling,, 
+// some useful event include: 
+// click, dblclick, keydown, keyup,
+
