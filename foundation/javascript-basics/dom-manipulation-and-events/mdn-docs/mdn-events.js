@@ -162,4 +162,11 @@ form.addEventListener('submit', (e) => {
 });
 // this is pretty weak form validation - but its okay for example purposes.
 
+// its not just webpages 
+// events are not unique to javascript, most programming languages have some kind of event model, and the way the most model works often differs from javascript's way.
 
+// events model in JS for web pages and event model for JS other enviroments are different.
+// nodejs runtime and browser js event differs...
+
+
+// THE END 
