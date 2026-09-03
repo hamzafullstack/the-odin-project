@@ -143,5 +143,23 @@ textBox.addEventListener('keydown', (event) => {
 
 // preventing default behaviors
 // you will come across a situation where you want to prevent an event from doing what it does by default. the most common example is that of a web form, like a custom registration form, 
+// normally we fill the form and submit it, and server process and browser to be redirected to "success message". etc 
 
-// chal yaaaar kal karte hai namaz ki tayari karte.
+// the trouble comes when the user has not submitted the data correctly - as a developer, you want to prevent the submission to the server. and give an error messag saying what is wrong and what need to be done to put things right. some browsers support automatic form data validation feature but some dont. you are advised to not rely on those and implement your own validation checks.
+
+// form validation / preventDefault()
+
+const form = document.querySelector('form');
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const para = document.querySelector('p');
+
+form.addEventListener('submit', (e) => {
+    if (fname.value === "" || lname.value === "") {
+        e.preventDefault();
+        para.textContent = 'You need to fill in both names';
+    }
+});
+// this is pretty weak form validation - but its okay for example purposes.
+
+
