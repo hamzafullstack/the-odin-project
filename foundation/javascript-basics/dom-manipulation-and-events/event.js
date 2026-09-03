@@ -65,3 +65,22 @@ buttons.forEach((button) => {
 // some useful event include: 
 // click, dblclick, keydown, keyup,
 
+
+// w3schools references
+// https://www.w3schools.com/jsref/dom_obj_event.asp
+
+// javascripttutorial.net other events 
+// https://www.javascripttutorial.net/javascript-dom/javascript-events/
+// https://www.javascripttutorial.net/javascript-dom/javascript-mouse-events/
+// https://www.javascripttutorial.net/javascript-dom/javascript-keyboard-events/
+// https://www.javascripttutorial.net/javascript-dom/javascript-event-delegation/
+// https://www.javascripttutorial.net/javascript-dom/javascript-dispatchevent/
+// https://www.javascripttutorial.net/javascript-dom/javascript-custom-events/
+
+// read and understand callbacks
+// https://dev.to/i3uckwheat/understanding-callbacks-2o9e
+
+// MDN  exercise to test skills 
+// https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#doing_some_basic_dom_manipulation
+// https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#creating_a_dynamic_shopping_list
+
