@@ -81,4 +81,59 @@ myName['name']['first']; // Ameer.
 // dot notation is generally preferred over bracket notation because it is more succinct and easier to read.
 
 // setting object members.
-// 
+// you can also set (update) the value of object members by declaring the members you want to set using dot or bracket notation.
+
+const friend = {
+    name: {
+        first: 'Muzammil',
+        last: 'Baloch',
+    },
+    age: 23,
+};
+friend.age = 24;
+friend['name']['last'] = 'Bugti';
+console.log(friend);
+friend.age;
+friend['name']['last'];
+
+// adding new members 
+friend['eyes'] = 'Black';
+friend.farewell = function() {
+    console.log('Bye Dude');
+};
+
+// testing new members
+friend['eyes'];
+friend.farewell(); // bye dude.
+// one of useful aspect of bracket notation is that it can be used to set not only member values dynamically but member names too.
+
+// const myDataName = nameInput.value;
+// const myDataValue = nameValue.value;
+const data = {
+
+}
+const myDataName = 'height';
+const myDataValue = '1.77m';
+data[myDataName] = myDataValue;
+data.height;
+console.log(data);
+
+// adding a property to an object using method above isn't possible with 'dot notation'.
+
+// what is 'this'?
+// you may have noticed something slightly strange in our method above. like this.name this.age etc 
+
+// wondering what this is??? 
+// the this keyword typically refers to current object the code is being executed in.. in the context of an object method. this refers to the object that the method was called on.
+
+const queen = {
+    name: 'Marie Curie',
+    introduceSelf() {
+        console.log(`Hi! meet the ${this.name}. The queen of modern science.`);
+    },
+};
+queen.introduceSelf(); // method called
+// queen.introduceSelf();-- this happens because when the method is called, this refers to the object on which the method is called. which allows the same method definition to work for multiple objects.
+
+// this isnot  hugely useful when you are writing out object literals by hand.. but very useful and very essential when we start using constructors to create more than one object from a single object definition..
+
