@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+</head>
+<body>
+    <h1>introduction to SVG</h1>
+    <p>
+        SVGs are a very common image format on the web. they can be little confusing at first, but once you know how to use them, they are an incredibly powerful tool for creating high-quality, dynamic images for your website.
+    </p>
+    <h2>what are SVGs?</h2>
+    <p>
+        <strong>SVGs</strong> are a scalable image format, which means they will easily scale to any size and retain their quality without increasing their filesize. they are also very useful if you need to create or modify your images programmatically, because you can change their properties through css and javascript. svgs are often used for 1icons, 2graphs/charts/ 3large, simple images, 4patterned backgrounds, 5applying effects to other elements via svg filters.
+        <blockquote>SVGs</blockquote> are stand for <strong>scalable Vector Graphics</strong> vector Graphics are image defined by <strong>math</strong>.. svgs are defined using XML aka extensible markup language its a html like markup language. which means svg code is readable.
+        and you can use xml direct in html.
+    </p>
+    <h2>drawbacks</h2>
+    <p>
+        clearly svgs are awesome, but because every single detail of the image needs to be written out as XML, they are extremely inefficient at storing complex images... if your image is supposed to be a photo realistic or it has fine details or textures <a href="https://unsplash.com/s/photos/grunge-texture">grunge-texture</a> are great example.
+    </p>
+    <h2>Anatomy of an SVG</h2>
+    <p>
+        typically, you will not want to create a svgs from scratch in your code. most often you you will downlaod the file or copy the code from internet.
+    </p>
+    <p>
+        <strong>xmln:</strong> stand for XML NameSpace this specifies what dialect of xml you are using.
+        <strong>viewBox:</strong> defines the bounds of your svg. When you have to define the positions of different points of the element.
+        <strong>class, id:</strong> these attributes function just like they do in html. using these in svg allows you to easily target an element via css or javascript. or reuse them via 'use' element.
+        elements such as <Strong> circle, rect,path, text, </Strong>are defined by the svg NameSpace.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element">complete list of svg elements</a>
+    </p>
+    <h2>Embedding SVGs</h2>
+    <p>
+        there are two main approaches when deciding how to actually place the svg in your document: linked, and inline.
+        linking works the same way linking your img via <img src="" alt=""> tag 
+        the <strong>Alternative</strong> is inline your svgs by pasting their content directly into your webpage's code. inlining SVGs allows you to unlock their full potential but it also comes with some serious drawbacks it makes your code harder to read, make your page less cacheable and if its a large svg it might delay the rest of your html from loading.
+    </p>
+</body>
+</html>
