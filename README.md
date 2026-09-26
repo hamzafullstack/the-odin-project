@@ -103,36 +103,8 @@ Additional reading, documentation, references, and best practices recommended th
 - Open Source
 - Technical Interviews
 - Career Preparation
-
 ---
 
-<h2 style="color:#58A6FF;">Repository Structure</h2>
-
-```text
-the-odin-project/
-
-├── introduction/
-├── git-basics/
-├── html-foundation/
-├── css-foundation/
-├── flexbox/
-├── javascript-basics/
-
-├── intermediate-html-css/
-├── advanced-html-css/
-
-├── javascript/
-├── react/
-├── nodejs/
-├── databases/
-
-├── conclusion/
-├── getting-hired/
-
-└── README.md
-```
-
----
 
 <h2 style="color:#58A6FF;">Projects</h2>
 
@@ -177,10 +149,13 @@ The goal is to build a strong understanding of web development fundamentals befo
 | Module | Status |
 |---------|--------|
 | Introduction | Completed |
-| Foundations | In Progress |
-| Intermediate HTML & CSS | Pending |
+| Foundations |  Completed |
+| Intermediate HTML & CSS | In Progress |
+| JavaScript | Pending |
 | Advanced HTML & CSS | Pending |
-| Full Stack JavaScript | Pending |
+| React | Pending |
+| Databases | Pending |
+| NodeJS | Pending |
 | Conclusion | Pending |
 | Getting Hired | Pending |
 
