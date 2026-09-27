@@ -1,0 +1,25 @@
+/* in most of the project you don't need full reset */
+/* reset based on your needs */
+/* normalize.css is a library */
+
+/* practical approach */
+/* very common baseline */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* handle default styling project needs and requirements. handle when the actual design need to reset defaults */
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+/* Bootstrap Reboot is built on Normalize.css. */
+
+/* https://css-tricks.com/reboot-resets-reasoning/ */
