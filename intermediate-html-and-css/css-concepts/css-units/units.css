@@ -1,0 +1,56 @@
+/* css units  */
+
+/* introduction */
+/* 
+
+there are many different units that you can use to define sizes in css. this lesson will introduce the most important to you. and show you where you learn about the rest of them.
+
+*/
+/* Absolute units */
+/* 
+
+Absolute units are those that are always the same in any context. 'PX' is an absolute unit because the size of a pixel doesn't change relative to anything else on the page. in fact, 'px' is the only absolute unit you should be using for web projects.
+the rest of like in(inch) and cm(cemtimeter) make no sense for web.
+
+*/
+
+/* Relative units */
+/* 
+
+Relative units are units that change based on their context. there several of them that you're likely to encounter, and want to use.
+
+"em and rem" both refers to font size, though they are often used to define other sizes in css.
+
+1em is the font-size of an element(or the element's parent if you are using it to set font-size). 
+1em === 16px.
+1rem === 16px
+both rem and em has same size.
+
+using relative size like rem to define font sizes accros your website is recommanded.. many browsers allow users to change the base font-size to increase readability. if at all possible it is advisable to respect a user's wishes regarding font size.
+
+*/
+
+/* viewport units */
+/* 
+
+the units vh and vw relate to the size of the viewport. specially 1vh is equal to 1% of the viewport height, and 1vw is equal to 1% of the viewport width. 
+these can be useful any time you want something to be sized relative to the viewport, including full-height heroes and full-screen app-like interfaces.
+
+*/
+/* so many units */
+/* 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length
+
+use units based on their use case.
+
+*/
+
+/* Assignment */
+/* 
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+
+https://web.archive.org/web/20251130034321/https://codyloyd.com/2021/css-units/
+
+https://css-tricks.com/fun-viewport-units/
+*/
