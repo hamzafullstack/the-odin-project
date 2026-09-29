@@ -1,0 +1,21 @@
+/* More Text Styles */
+/* 
+
+we have already done a bit of text-manipulation in our foundations lesson, here in this lesson we will cover few more useful css properties than can be used when working with text.
+
+*/
+
+/* fonts */
+/* 
+
+in our foundations lwill lesson, we covered changing the font-family of an element.
+
+*/
+/* The system font stack */
+/* 
+
+if you use the font-family property to change to a font like impact or times new roman, and those fonts do not happen to be installed on your user's computer, then the a default fallback font will be displayed if you didn't defined a fallback font the browser will choose a font which might be ugly.
+
+read article on system font stack.
+https://css-tricks.com/snippets/css/system-font-stack/
+*/
