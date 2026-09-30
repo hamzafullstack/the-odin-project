@@ -89,7 +89,7 @@ This repository documents my journey from web development fundamentals to full-s
 
 ### The Odin Project Resources
 
-Additional reading, documentation, references, and best practices recommended throughout the curriculum.
+Additional reading, documentation, references, and best practices recommended throughout the curriculum..
 
 ---
 
