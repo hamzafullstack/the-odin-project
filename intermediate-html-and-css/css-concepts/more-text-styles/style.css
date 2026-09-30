@@ -59,3 +59,22 @@ Note: an important consideration when using a font library is the library's pira
 https://thehackernews.com/2022/01/german-court-rules-websites-embedding.html
 
 */
+
+/* self hosted fonts */
+/* 
+
+it is also to use a font that you have downloaded from the web. in your css file you import and define a custom font using @font-face rule. 
+https://fileinfo.com/filetypes/font
+https://www.w3schools.com/css/css3_fonts.asp
+
+*/
+
+@font-face {
+  font-family: my-cool-font;
+  src: url(../fonts/the-font-file.woff);
+}
+
+h1 {
+  font-family: my-cool-font, sans-serif;
+}
+/* custom font method maybe more reliable than relying on a third-party font API, but it is always wise to include a fallback. */
