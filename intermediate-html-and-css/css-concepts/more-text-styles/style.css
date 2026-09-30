@@ -19,3 +19,12 @@ if you use the font-family property to change to a font like impact or times new
 read article on system font stack.
 https://css-tricks.com/snippets/css/system-font-stack/
 */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* 
+
+The point of this somewhat ridiculous string of font-families is to try using the default font of the system's user interface. it will go through each of those fonts untill it finds one that is installed on the system. 
+
+*/
