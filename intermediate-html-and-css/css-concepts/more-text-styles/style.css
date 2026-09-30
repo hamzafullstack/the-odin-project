@@ -129,3 +129,9 @@ p.line-height {
   line-height: 1.5;
 }
 
+/* text-transform */
+/* 
+text transform changes the case of given text, you can force your heading tags to be all uppercase or to capitalized everyword.
+usage can be seen on mdn docs :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform
+*/
