@@ -96,3 +96,24 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/em
 h1 {
   font-style: italic;
 }
+
+/* letter spacing */
+/* 
+letter spacing does what you would expect... it changes the space between letters in a word this can be useful for adjusting custom fonts that you feel have too much or too little space. it can also be aesthetically pleasing in some cases, like headers.
+*/
+h1 {
+  font-family: 'COUTUREBold';
+  margin: 0;
+  font-size: 38px;
+}
+
+.wide {
+  font-size: 24px;
+  letter-spacing: 0.5em;
+}
+
+.narrow {
+  font-size: 48px;
+  letter-spacing: -0.15em;
+}
+/* use this sparingly with care, do not make your site hard to read.. */
