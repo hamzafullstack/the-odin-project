@@ -78,3 +78,21 @@ h1 {
   font-family: my-cool-font, sans-serif;
 }
 /* custom font method maybe more reliable than relying on a third-party font API, but it is always wise to include a fallback. */
+
+/* Text styles */
+/* 
+
+You learned the basics of fonts in our foundations lesson, there is quite a bit more than you can do with css when it comes to manipulating text styles, these rules are all relatively simple and self-explanatory.
+
+*/
+
+/* Font style */
+/* 
+typically used to make a font italic you learned about the html 'em' tag also signifies that the text wraps is significant or should be emphasized in some way. a good rule of thumb to follow is that if you just want text to be italic or bold or underlined, highlighted etc, use a css property.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/em
+
+*/
+
+h1 {
+  font-style: italic;
+}
