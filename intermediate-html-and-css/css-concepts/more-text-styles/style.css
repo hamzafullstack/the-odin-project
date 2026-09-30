@@ -35,5 +35,27 @@ The point of this somewhat ridiculous string of font-families is to try using th
 if you want to use a font that will not be available on the user's device, you will need to import the font from an online source, either a font library or an asset on your site. both method will be import the font and make it accessible in your css.
 NOTE: always add the fallback,,, 
 
+*/
+
+/* online font libraries */
+/* 
+
+one popular and easy method to get fonts that are not installed on a user's device is to use an online font library.
+go to website, select a font and then copy a snippet from the website to import that font from their server into your website. you will be given either a 'link' tag to put in your html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+or an @import tag that can be dropped at the top of a css file
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+common font libraries..
+https://fontlibrary.org/
+https://fonts.bunny.net/
+https://fonts.google.com/
+
+Note: an important consideration when using a font library is the library's piracy policies and any regulations you may need to comply with 
+https://thehackernews.com/2022/01/german-court-rules-websites-embedding.html
 
 */
