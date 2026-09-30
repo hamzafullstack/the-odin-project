@@ -28,3 +28,12 @@ body {
 The point of this somewhat ridiculous string of font-families is to try using the default font of the system's user interface. it will go through each of those fonts untill it finds one that is installed on the system. 
 
 */
+
+/* Web fonts */
+/* 
+
+if you want to use a font that will not be available on the user's device, you will need to import the font from an online source, either a font library or an asset on your site. both method will be import the font and make it accessible in your css.
+NOTE: always add the fallback,,, 
+
+
+*/
