@@ -135,3 +135,10 @@ text transform changes the case of given text, you can force your heading tags t
 usage can be seen on mdn docs :
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform
 */
+
+/* Text-shadow */
+/* 
+as you might except text-shadow adds a shadow around the text in the selected element. this one is best used sparingly, but can be used to great effect in headings or other presentational text.
+MDN-docs reference page :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow
+*/
