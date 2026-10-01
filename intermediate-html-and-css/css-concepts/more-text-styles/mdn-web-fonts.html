@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web fonts | MDN-Docs</title>
+    <link rel="stylesheet" href="web-fonts.css">
+</head>
+<body>
+    <h1>MDN DOCS | Web Fonts</h1>
+    <p>
+        exploring web fonts in detail we'll see how to use custom fonts with your web page to allow for more varied, custom text styling.
+    </p>
+    <h2>Web fonts</h2>
+    <p>
+        web fonts are alternative to system fonts which works well, css allows you to specify font files, available on the web, to be downloaded along with your website as it's accessed. this means that any browser supporting this css feature can be display the fonts you've specifically chosen.
+          <pre><code>@font-face {
+  font-family: "myFont";
+  src: url("myFont.woff2");
+}</code></pre>
+<br> note: always keep in mind fonts generaly are not free
+all major browsers support woff/woff2 format
+
+    </p>
+
+    <h2>Adding your own web fonts</h2>
+    <p>This is a basically an exercise so i'll do it in a saperate file</p>
+    <button id="mdn" data-mdn="mdn">MDN LOVE BUTTON</button>
+    <script>
+        const btn = document.querySelector('#mdn');
+        
+        btn.addEventListener('click', () => {
+            const para = document.createElement('p');
+            para.textContent = 'Love MDN-Docs';
+            document.body.appendChild(para);
+        });
+    </script>
+</body>
+</html>
