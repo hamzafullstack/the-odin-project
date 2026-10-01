@@ -1,0 +1,31 @@
+.text-one {
+    text-shadow: red 0 -2px;
+}
+
+/* multiple shadows  */
+.text-two {
+    text-shadow: 
+    1px 1px 2px black,
+    0 0 1em blue,
+    0 0 0.2em blue;
+    color: white;
+    font: 1.5rem 'Georgia', serif;
+}
+
+.text-three {
+    text-shadow: 1px 1px 1px purple;
+    color: black;
+}
+
+.btn {
+    text-shadow: 1px 1px 1px olive;
+    color: rgb(244, 38, 38);
+    /* border: 1px solid; */
+    border-radius: 10%
+    padding 10px;
+}
+
+
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow */
