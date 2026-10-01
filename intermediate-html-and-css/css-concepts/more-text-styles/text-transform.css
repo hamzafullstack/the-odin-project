@@ -1,0 +1,55 @@
+/* example using none  */
+span {
+    text-transform: none;
+}
+strong {
+    float: right;
+}
+/* example using capitalize in general */
+.capitalize {
+    text-transform: capitalize;
+    float: right;
+    text-shadow: 1px 1px 2px purple; /* newly learned property added to practice with it */
+}
+/* the punctuations will be ignored the keyword target the first letter, */
+
+/* initial symbol will be ignored too.*/
+
+
+/* uppercase in general example. */
+.all-uppercase {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    float: right;
+}
+/* uppercase greek vowels */
+.greek {
+    text-transform: uppercase;
+    float: right;
+}
+
+    /* urdu will not get uppercase */
+
+.all-lowercase {
+    text-transform: lowercase;
+    float: right;
+}
+
+/* Full width.. some charectors exists in two formats: normal width and a full-width, with different unicode code points */
+
+.japanese {
+    text-transform: full-width;
+    float: right;
+}
+
+/* math-auto */
+/* we give every .math-id element text transform: math-auto; however note how only the x characters becomes italic, while the sin and cos remain unchanged. */
+
+.math-id {
+  text-transform: math-auto;
+}
+
+/* in details on mdn docs
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform
+
+*/
