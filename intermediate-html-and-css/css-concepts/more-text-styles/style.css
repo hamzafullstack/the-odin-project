@@ -142,3 +142,28 @@ as you might except text-shadow adds a shadow around the text in the selected el
 MDN-docs reference page :
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow
 */
+
+/* ellipsis */
+/* 
+
+ellipsis isnot is single property but its useful trick to keep in your toolbox. with the text-overflow property you can truncate overflowing text with an ellipsis. making an overflow happen, however requires the use of couple other properties because the default behavior of text printing outside its container isn't technically considered an overflow.
+
+*/
+.overflowing {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 
+learn more about the ellipsis on css-trick.com
+https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+*/
+
+/* Assignment links */
+/* 
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts
+https://web.dev/articles/font-best-practices
+
+
+*/
