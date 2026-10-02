@@ -1,0 +1,59 @@
+/* General setup */
+
+@font-face {
+    font-family: 'Bright Sunlist DEMO VERSION';
+    src: url('fonts/BrightSunlistDEMOVERSION.woff2') format('woff2'),
+        url('fonts/BrightSunlistDEMOVERSION.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bright Sunlist DEMO VERSION';
+    src: url('fonts/BrightSunlistDEMOVERSION_1.woff2') format('woff2'),
+        url('fonts/BrightSunlistDEMOVERSION_1.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rasley Heights PERSONAL USE';
+    src: url('fonts/RasleyHeightsPERSONALUSE-Regular.woff2') format('woff2'),
+        url('fonts/RasleyHeightsPERSONALUSE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Bright Sunlist DEMO VERSION', sans-serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: 'Bright Sunlist DEMO VERSION', sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+  font-family: 'Rasley Heights PERSONAL USE';
+}
