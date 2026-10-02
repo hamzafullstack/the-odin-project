@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Bright Sunlist DEMO VERSION';
+    src: url('BrightSunlistDEMOVERSION.woff2') format('woff2'),
+        url('BrightSunlistDEMOVERSION.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bright Sunlist DEMO VERSION';
+    src: url('BrightSunlistDEMOVERSION_1.woff2') format('woff2'),
+        url('BrightSunlistDEMOVERSION_1.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rasley Heights PERSONAL USE';
+    src: url('RasleyHeightsPERSONALUSE-Regular.woff2') format('woff2'),
+        url('RasleyHeightsPERSONALUSE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
