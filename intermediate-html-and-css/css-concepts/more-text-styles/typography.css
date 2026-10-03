@@ -1,0 +1,42 @@
+/* 
+if we dont specify any style for text, browsers will apply their own default styles, these are called user agent stylesheets, and many vary from browser to browser. users can set their own preferences for displaying text too.
+ */
+ /*
+ if you dont specify a line height browser will wrap lines of text at the edge of the screen. so text on the web is responsible by default, it flows to fit the user's viewport.
+ */
+
+ /* 
+ Good Typography is all about presenting your text in an appropriate way.
+ */
+
+ /* 
+ its difficult to know that what size text on the web should be.
+ */
+
+ /*
+  you can always use media queries to change the font-size property as the screeen size gets wider. 
+  */
+
+  @media (min-width: 30em) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (min-width: 40em) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 50em) {
+  html {
+    font-size: 175%;
+  }
+}
+
+@media (min-width: 60em) {
+  html {
+    font-size: 200%;
+  }
+}
