@@ -61,3 +61,25 @@ html {
   font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
 }
 /* now the text size shrinks and grows in proportion to the user's screen but the text size will never be smaller than 1rem or larger than 2rem. */
+
+/* Line length */
+/* 
+the web is not print, but we can learn lessons from the world of print and apply them on the web.
+http://webtypography.net/2.1.2
+
+anything from 45 to 75 charecters is widely regarded as a satisfactory line length for a single-column page set, in a serifed text face in a text size.
+the 66 charector line (counting both letters and spaces) is widely regarded as ideal.
+
+for multiple column work, a better average is 40 to 50 charectors.
+*/
+
+/* 
+you can't set a direct line length in css there is no line-length property in css.
+you can stop text from getting to wide by limiting how wide the container can be, the max-inline-size property is perfect for this....
+ */
+
+ article {
+  max-inline-size: 66ch;
+}
+/* using ch units for width will cause new lines to wrap at the 66th character at the font-size. */
+
