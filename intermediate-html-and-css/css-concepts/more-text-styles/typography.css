@@ -83,3 +83,19 @@ you can stop text from getting to wide by limiting how wide the container can be
 }
 /* using ch units for width will cause new lines to wrap at the 66th character at the font-size. */
 
+/* Line Height */
+/* 
+there is no line-length property in css, but there is a line-height property.
+
+*/
+article {
+  max-inline-size: 66ch;
+  line-height: 1.65;
+}
+blockquote {
+  max-inline-size: 45ch;
+  line-height: 2;
+}
+/* use unitless values for line-height declarations. this ensures that the line height is relative to the size 1.5 unitless line height is recommanded */
+/* do this  */
+/* line-height: 1.5; */
