@@ -1,0 +1,36 @@
+/* the background css property */
+/* 
+The background css shortand property sets all background styles properties at once, such as color, image, origin, size, and repeat method.
+*/
+
+/* bg color defualt is transparent */
+/* bg image default : none */
+/* bg position default : 0% 0% */
+/* bg repeat default : repeat */
+/* bg size default : auto */
+/* bg attachment default is scroll */
+/* bg clip and bg origin default is borderbox and padding box respectively */
+
+/* body background applied to the entire document. */
+/* formal definition */
+/* as each of the properties of the shortand */
+/* background-image : none */
+/* background-position : auto auto */
+/* background-origin : padding-box */
+/* background-clip : border-box */
+/* background-attachment : scroll */
+/* background-color : transparent */
+
+/* applies to all elements. it also applies to ::first-letter  and ::first-line. */
+
+/* accessibility */
+/* 
+browsers do not provide any special information on background images to assistive technology. this is important primarily for screen readers.
+*/
+/* example setting background with color keywords and image */
+p {
+    background: pink;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background */
+/* learn more on mdn-docs  */
