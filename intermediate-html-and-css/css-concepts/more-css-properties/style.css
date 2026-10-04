@@ -1,0 +1,36 @@
+/* more css properties */
+/* there are many css properties but the amount of properties you're actually going to use on a daily basis is much smaller. */
+
+/* Background */
+/* 
+background can do more than just setting background colors, background property is actually shorthand for 8 different background related properties.
+*/
+
+/* border */
+/*
+ borders are also useful and there also border properties like border-radius.
+ border-radius is the property that is used to create rounded corners on the things.
+*/
+
+/* box-shadow */
+/* 
+As you might except form the property name, box-shadow adds a shadow effect around the an element. this is useful to create a sense of depth on your page and to add subtle separation between elements.
+*/
+
+/* overflow */
+/* 
+it is possible using overflow, to define what happens to an elenent when its content is too big to fit. the most common usage is likely to add scrollbars to an element inside a webpage, like card with scrollbar content.
+*/
+/* opacity */
+/* 
+Opacity is another easy one that can be very useful in some circumstances. the opacity property allows to make an element more or less transparent. this can be useful for creating hover effects, or for layering, elements on top of each other.
+*/
+
+/* 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-radius
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow
+https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+*/
