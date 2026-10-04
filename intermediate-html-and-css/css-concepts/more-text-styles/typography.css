@@ -40,3 +40,24 @@ if we dont specify any style for text, browsers will apply their own default sty
     font-size: 200%;
   }
 }
+
+/* Scaling text... */
+/* 
+switching between fixed text sizes at specific breakpoints is quite jumpy. a more responsive approach is to let the user's device width influence the text size. the vw unit in css stands for viewport width.
+its important that you dont use the vw by itself in a font-size declaration.
+*/
+
+/* Do this... the text will be resizable if you mix in a relative unit like rem, em, or ch. calc func is perfect for this.. */
+html {
+  font-size: calc(0.75rem + 1.5vw);
+}
+/* let the browser do the math. */
+
+/* Clamping text.... */
+/* 
+You probably dont want your text to shrink and grow to extremes. You can control where the scaling starts and ends using the css clamp()  function.
+*/
+html {
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+/* now the text size shrinks and grows in proportion to the user's screen but the text size will never be smaller than 1rem or larger than 2rem. */
