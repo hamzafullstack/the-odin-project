@@ -99,3 +99,30 @@ blockquote {
 /* use unitless values for line-height declarations. this ensures that the line height is relative to the size 1.5 unitless line height is recommanded */
 /* do this  */
 /* line-height: 1.5; */
+
+/* Web fonts */
+/* 
+for long time system fonts were only options. but now you can choose a web font that matches the feel of your content.
+use @font-face to tell the browsers where to find your web font files, use woff2 as your web font format. its well supported and has the best performance gains
+*/
+/* example code for web font @font-face */
+@font-face {
+  font-family: Roboto;
+  src: url('/fonts/roboto-regular.woff2') format('woff2');
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* font loading */
+/* 
+use font-display swap if you still want the web font to replace the system font whenever the web font-finally loads.
+*/
+body {
+  font-family: Roboto, sans-serif;
+  font-display: swap;
+}
+/* font varibales */
+/* 
+if you are using lots of different weights or styles of the same typeface you should consider using variables.
+*/
