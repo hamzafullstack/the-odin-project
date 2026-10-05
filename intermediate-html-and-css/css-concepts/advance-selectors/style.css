@@ -45,9 +45,21 @@ if we want to select all of the sibling following an element and not just the fi
 /* All of .group1's div siblings - in this case the 2nd and 3rd .child divs, will get selected by this */
 .group1 ~ div {
   /* Our cool CSS */
+  background: #000;
 }
 /*
 just like the descendant combinator, these selectors dont have any special specificity rules.
 mdn reference link :
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators
+*/
+
+/* pseudo selectors */
+/* 
+What is a pseudo-class?
+A pseudo-class is a selector that selects elements that are in a specific state, 
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Pseudo_classes_and_elements
+
+What is a pseudo-element?
+Pseudo-elements behave in a similar way. However, they act as if you had added a whole new HTML element into the markup, rather than applying a class to existing elements.
+Pseudo-elements start with a double colon ::. ::before is an example of a pseudo-element.
 */
