@@ -25,5 +25,17 @@ main > div > div {
   color: brown;
 }
 /* 
-
+phrased another way, the child selector will select an element that is one level of indentation down. in order to select an element that is next to
 */
+/* Only the div with the classes "child group2" will get selected by this */
+.group1 + div {
+  /* Our cool CSS */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Only the div with the classes "child group3" will get selected by this */
+.group1 + div + div {
+  /* More cool CSS */
+  font: 700;
+}
+
