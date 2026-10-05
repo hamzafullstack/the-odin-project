@@ -5,3 +5,25 @@
 there are a lot of of advance selectors, so going through every single one is outside of the scope.
 we will go through some of the mos useful and common ones,
 */
+
+/* Child and Sibling Combinators */
+/* 
+some ways we can access different elements without referring to theirs classes.
+> : the child combinator.
++ : the next-sibling combinator.
+~ : the general sibling combinator.
+*/
+/* The divs with the class "child" will get selected by this */
+main > div {
+  /* Our cool CSS */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* The divs with the class "grand-child" will get selected by this */
+main > div > div {
+  /* More cool CSS */
+  color: brown;
+}
+/* 
+
+*/
