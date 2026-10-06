@@ -152,3 +152,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elem
   .emojify::after {
     content: '🤓 😄 😎';
 }
+
+/* Attribute Selectors */
+/* 
+The last tool we are going to add to the box is attribute selectors. recall that an attribute is anything in the opening tag of an html element - such as src='image.jpg' or href='www.img.cm'.
+
+since we write our own values for attributes, we need a slightly more flexible system to be able to target specific values.
+attribute selectors have the same specifity as classes and pseudo-classes(0,0,1,0) 
+
+[attribute^="value"] - ^= Will match strings from the start.
+[attribute$="value"] - $= Will match strings from the end.
+[attribute*="value"] - *= The wildcard selector will match anywhere inside the string.
+
+MDN reference Page 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors
+*/
