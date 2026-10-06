@@ -129,3 +129,26 @@ for more dynamic approach we can use ":nth-child". this is a flexible pseudo-cla
   .myList:nth-child(even) {/* Selects every even element with class myList */
   color: pink;
   }
+
+  /* pseudo-elements */
+/* 
+while pseudo-classes give us an alternative way to interact with our html elements based on their state or structure, pseudo-elements are more abstract. they are allows us to affect parts of our html that are not elements at all. 
+
+::marker allows you to customize the styling of your <li> elements bullets or numbers.
+
+::first-letter and ::first-line allows you to give special styling to the first letter or line of some text.
+
+::selection allows you to change the highlighting when a user selects text on the page.
+
+::before and ::after allows us to add extra elements onto the page with css, instead of HTML. using it to decorate text in various ways is one common use case.
+
+MDN reference link for all pseudo elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements
+*/
+  .emojify::before {
+    content: '😎 😄 🤓';
+}
+
+  .emojify::after {
+    content: '🤓 😄 😎';
+}
