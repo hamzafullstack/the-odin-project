@@ -97,3 +97,35 @@ these types of useful pseudo-classes can make your page feel much more dynamic a
 normally links are blue and turn purple after visiting you can modify their behaviors using ":link" and ":visited" pseudo-classes
 
 */
+
+/* structural pseudo classes */
+/* 
+structural pseudo classes are powerful way to select elements based on their positon within DOM.
+
+:root : is a special class that represents the very top level of your document like HTML element. 
+helpful resource to findout difference between : root and HTML element.
+https://stackoverflow.com/questions/15899615/whats-the-difference-between-css3s-root-pseudo-class-and-html
+":root" is generally the place where you will place your "GLOBAL" css rules that you want available everywhere such as your custom properties and css variables or rules such as box-sizing: border-box;
+
+first-child and :last-child will match elements that are the first or last sibling.
+
+:empty will match element that have no children
+:only-child will match elements that do have any siblings.
+for more dynamic approach we can use ":nth-child". this is a flexible pseudo-class with a few different uses.
+
+*/
+  .myList:nth-child(5) {/* Selects the 5th element with class myList */
+  content: 'hey';
+  }
+
+  .myList:nth-child(3n) { /* Selects every 3rd element with class myList */
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  .myList:nth-child(3n + 3) { /* Selects every 3rd element with class myList, beginning with the 3rd */
+  color: green;
+  }
+
+  .myList:nth-child(even) {/* Selects every even element with class myList */
+  color: pink;
+  }
