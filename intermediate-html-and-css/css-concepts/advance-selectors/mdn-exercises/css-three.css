@@ -1,0 +1,38 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+td,
+th {
+  padding: 0.2em;
+  text-align: left;
+}
+
+a:link {
+    color: orange;
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+.container p:first-child {
+    font-size: 150%;
+}
+.container p:first-child::first-line {
+    color: red;
+}
+tr:nth-child(2n) {
+    background-color: black;
+    color: white;
+}
