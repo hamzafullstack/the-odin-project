@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+h1 {
+    color: blue;
+}
+h2{
+    color: white;
+    background-color: blue;
+}
+span {
+    font-size: 200%;
+}
