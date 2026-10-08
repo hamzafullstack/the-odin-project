@@ -42,3 +42,17 @@ a couple of good use cases for absolute positioning are modals, image with a cap
 /* 
 fixed elements are also removed from the normal flow of the document and are position relative to the viewport...... it will stay there as the user scrolls. this is especially useful fo things like navigation bars and floating chat buttons.
 */
+
+/* sticky position ing */
+/* 
+sticky elements will act like normal elements untill you scroll past them,then they start behave like fixed elements. 
+https://codepen.io/theanam/pen/MPLBYy
+*/
+
+/* 
+Assignments link
+http://youtube.com/watch?v=jx5jmI0UlXU 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position
+https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+https://www.kevinpowell.co/article/positition-fixed-vs-sticky/
+*/
