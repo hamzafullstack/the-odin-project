@@ -1,0 +1,35 @@
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  display: block;
+  padding: 0.5em;
+}
+
+a {
+  border: 5px solid grey;
+}
+
+
+a[title='Visit example.com'] {
+  border: 5px solid pink;
+}
+a[href*='contact'] {
+  border: 5px solid orange;
+}
+a[href^='https'] {
+  border: 5px solid green;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Selectors#selectors_5 */
