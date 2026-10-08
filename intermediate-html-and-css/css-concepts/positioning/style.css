@@ -3,4 +3,8 @@
 we have already moved elements around the screen using margin, padding, flexbox theses techniques have all relied on css's default positioning-mode the default positioning-mode is intuitive.
 */
 
-/* i'll be back after Dhuhar prayer. */
+/* Static and relative positioning */
+/* 
+the default positioning mode that you've gotten used to is position: static. the difference between static and relative is fairly simple static is default position of every element and properties top, right, bottom, and left do not affect the position of the element. relative on the other hand is pretty much the same as static, but properties top, right,... etc displace the element relative to its normal position in the flow of the document.
+*/
+
