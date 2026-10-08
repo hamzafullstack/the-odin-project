@@ -38,3 +38,7 @@ a couple of good use cases for absolute positioning are modals, image with a cap
   position: absolute;
 }
 
+/* fix positioning */
+/* 
+fixed elements are also removed from the normal flow of the document and are position relative to the viewport...... it will stay there as the user scrolls. this is especially useful fo things like navigation bars and floating chat buttons.
+*/
