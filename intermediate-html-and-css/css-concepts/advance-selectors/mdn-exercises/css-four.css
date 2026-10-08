@@ -1,0 +1,11 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+.container h2 + p {
+    color: red;
+}
+.list > li {
+    border-bottom: 1px solid gray;
+    list-style: none;
+}
