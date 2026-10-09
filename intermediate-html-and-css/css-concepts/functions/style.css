@@ -95,3 +95,24 @@ max works the same way as min() only in reverse and is like javascript's math.ma
 width: max(100px, 4em, 50%);
 
 */
+
+/* 
+clamp() function
+clamp() is a great way to make elements fluid and responsive. clamp() takes 3 values.
+
+h1 {
+font-size: clamp(1.5rem, 5vw, 3rem);
+}
+1. the minimum value 1.5rem
+2. the scaling value 5vw
+3. the maximum value 3.rem
+the clamp() css function uses these values to set min value scaling value and max value. 
+this would mean the minimum acceptable font-size would be 1.5rem and maximum would be 3rem. a font-size of 5vm is set in-between the value of 5vm allows fontsize to scale according viewport width.
+
+*/
+
+/* 
+Assignment links
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/Functions
+https://web.dev/articles/min-max-clamp
+*/
