@@ -13,3 +13,45 @@ h6 {
 /* 
 unlike programming languages you'll use in TOP, CSS does not allow us to create our own functions. instead language comes bundled with a list of premade functions that will help you solve the most common styling problems.
 */
+/* --header, --footer, and --main are all examples of CSS variables.  */
+:root {
+	--header: 3rem;
+	--footer: 40px;
+	--main: calc(100vh - calc(var(--header) + var(--footer)));
+    /* 
+     Combined with CSS variables, calc() can save us from the headache of repeating CSS rules.
+    */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0px solid transparent;
+	background: #7a7a7a;
+}
+
+#container {
+	border: 0px solid transparent;
+	height: 100vh;
+	color: white;
+}
+#container > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#header {
+	height: var(--header);
+	background: #111111;
+}
+#mainContent {
+	height: var(--main);
+	background: #343434;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer {
+	height: var(--footer);
+	background: #232323;
+}
