@@ -1,0 +1,15 @@
+/* css functions */
+/* 
+css also has functions, when the value is a word followed by a pair of parentheses() containing information between them.. as in background-color rgb(0, 0, 0); you are using css functions.
+*/
+/* 
+similar to programming languages functions in css are reusable piece of code which perform specific tasks.
+*/
+h6 {
+    color: rgb(0, 42, 255);
+    background: linear-gradient(90deg, blue, red);
+    /* the value of color is the function rgb() */
+}
+/* 
+unlike programming languages you'll use in TOP, CSS does not allow us to create our own functions. instead language comes bundled with a list of premade functions that will help you solve the most common styling problems.
+*/
