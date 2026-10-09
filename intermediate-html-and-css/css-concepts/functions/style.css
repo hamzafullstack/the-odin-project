@@ -87,3 +87,11 @@ p {
 /* 
 the min() function works just like javascript's math.min() and ruby's array#min method. it takes a list of values separated by commas and returns the smallest one.
 */
+
+/* 
+max() function
+max works the same way as min() only in reverse and is like javascript's math.max() method. it will select the largest possible value from within parentheses.
+
+width: max(100px, 4em, 50%);
+
+*/
