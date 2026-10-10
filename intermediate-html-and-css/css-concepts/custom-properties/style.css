@@ -25,3 +25,16 @@ we declare oyur custom property with a double hyphen -- followed by a case-senst
 
 when we want to access a custom property, we use the var() function as the value of a css property,
  */
+
+ /* fallback values. */
+ /* 
+ the var() function actually accepts two parameters.the first parameter we've already gone over, which is the custom property we want to assign, the second parameter is an optional fallback value. we can even pass in another custom propety as fallback property.
+ */
+
+ .fallback {
+  --color-text: white;
+
+  background-color: var(--undeclared-property, black);
+  color: var(--undeclared-again, var(--color-text, yellow));
+}
+/* if the --color-text custom property was invalid or didn't exist the fallback to our fallback would take over and the color property would have a value of yellow. */
