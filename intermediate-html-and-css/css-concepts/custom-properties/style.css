@@ -58,3 +58,23 @@ the scope of a custom property is determined by the selector. its very similar h
 /* 
 only elemenet with the cool-paragraph class would get styled with a red bg.
 */
+
+/* the :root selector */
+/* 
+while there maybe times where you will want to limit the scope of a custom property, 
+a better solution is declaring those custom properties on the :root selector, which is essentially the same thing as the html selector except it has a higher specificity.
+*/
+
+:root {
+  --main-color: red;
+}
+
+.cool-paragraph {
+  color: var(--main-color);
+}
+
+.exciting-paragraph {
+  background-color: var(--main-color);
+}
+
+/* by declaring our custom property on the :root selector in the example above, we can access it on any other valid selector within our css file. */
