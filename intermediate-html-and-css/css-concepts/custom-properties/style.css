@@ -85,3 +85,54 @@ beyond allowing us to access custom properties more globaly, the :root selector 
 
 note: themes code is in separate directory.. with some extra notes
 */
+
+/* media queries */
+/* 
+iving users the ability to toggle a theme themselves is great, but there’s another option for setting a theme that you may have come across on certain sites or applications: using the user’s theme setting from their operating system or user agent (like a browser). This can be done using the prefers-color-scheme media query, which lets you apply different styles based on the user’s device or settings, like screen size or theme preference (light/dark mode).
+
+The prefers-color-scheme query checks if the user has selected a theme on their OS or browser.
+*/
+:root {
+  --border-btn: 1px solid rgb(36, 36, 36);
+  --color-base-bg: rgb(240, 240, 240);
+  --color-base-text: rgb(18, 18, 18);
+  --color-btn-bg: rgb(220, 220, 220);
+  --theme-name: "light";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(240, 240, 240);
+    --color-btn-bg: rgb(36, 36, 36);
+    --theme-name: "dark";
+  }
+}
+
+body {
+  background-color: var(--color-base-bg);
+  color: var(--color-base-text);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.theme-name::after {
+  content: var(--theme-name);
+}
+
+/*
+ assignments
+ https://www.youtube.com/watch?v=PHO6TBq_auI
+ https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties#inheritance_of_custom_properties
+ https://www.youtube.com/watch?v=_2LwjfYc1x8
+ */
