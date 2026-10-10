@@ -78,3 +78,10 @@ a better solution is declaring those custom properties on the :root selector, wh
 }
 
 /* by declaring our custom property on the :root selector in the example above, we can access it on any other valid selector within our css file. */
+
+/* creating themes with custom properties */
+/* 
+beyond allowing us to access custom properties more globaly, the :root selector give us one way to add themes to our pages.
+
+note: themes code is in separate directory.. with some extra notes
+*/
