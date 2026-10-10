@@ -38,3 +38,23 @@ when we want to access a custom property, we use the var() function as the value
   color: var(--undeclared-again, var(--color-text, yellow));
 }
 /* if the --color-text custom property was invalid or didn't exist the fallback to our fallback would take over and the color property would have a value of yellow. */
+
+
+/* scope */
+/* 
+the scope of a custom property is determined by the selector. its very similar how scope works in javascript.
+*/
+.cool-div {
+  --main-bg: red;
+}
+
+.cool-paragraph {
+  background-color: var(--main-bg);
+}
+
+.boring-paragraph {
+  background-color: var(--main-bg);
+}
+/* 
+only elemenet with the cool-paragraph class would get styled with a red bg.
+*/
