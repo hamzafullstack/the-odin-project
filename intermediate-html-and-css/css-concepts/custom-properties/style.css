@@ -3,3 +3,25 @@
 custom css properties (aslo known as CSS Variables) can be a really useful and powerful tool when writing our css files.
 its incredibly useful for creating themes, such as the dark and light themes.
 */
+
+/* using custom properties */
+/* 
+the syntax for declaring and accessing a custom property is not too different from how we write a normal declaration.
+*/
+
+.error-modal {
+    /* declaring variables */
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+    /* using variables */
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+}
+/* 
+we declare oyur custom property with a double hyphen -- followed by a case-senstive hyphen separated property name (color-error-text). the use of kebab-case (single hyphens to separate words) is very important here because spaces are not valid. (--color error text would not work) 
+
+when we want to access a custom property, we use the var() function as the value of a css property,
+ */
