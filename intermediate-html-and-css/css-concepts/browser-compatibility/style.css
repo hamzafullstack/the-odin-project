@@ -13,3 +13,9 @@ https://www.youtube.com/watch?v=W4wWdmfOibY
 https://en.wikipedia.org/wiki/Chromium_(web_browser)
 
 */
+/* 
+what is brwoser compatibility?
+as companies compete for market share, different browsers are using different engines to display information on web pages, chrome an chromium utilize blink, while safari uses webkit.
+because of these differences your application may behave differently in the browser.
+for your web development projects to have a broader reach, you must make sure that you're testing your web applications against browsers which are mostly used by users. Chrome, firefox, safari, other chromium based (microsoft's Edge, brave etc) for chromium browsers if it works in chrome it should work work other related browsers as well.
+*/
