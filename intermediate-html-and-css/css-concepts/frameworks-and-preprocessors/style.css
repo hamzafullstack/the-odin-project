@@ -4,3 +4,14 @@ a useful reason to be aware of about CSS frameworks and proprocessors is that th
 it is advised to continue using vanilla css in your projects while you are learning css. all these frameworks are based around CSS.
 Trying to learn one during this course will not be as productive or valuable in the long run as improving your fundamental CSS Skills.
 */
+/* 
+Frameworks overview:
+Different frameworks have different goals. frameworks like Bootstrap do a lot of heavy lifting of packaging up commonly used css code for you. https://getbootstrap.com/
+Things like TAILWIND aim to change how we apply css through a different syntax, by supplying pre-named casses that typically only apply a single line of CSS each.
+https://tailwindcss.com/
+
+there are quite a few frameworks available. Two other frameworks you may come across are bulma and foundation but there are many more out there. 
+https://bulma.io/
+https://get.foundation/
+
+*/
