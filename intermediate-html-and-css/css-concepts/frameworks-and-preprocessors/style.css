@@ -15,3 +15,11 @@ https://bulma.io/
 https://get.foundation/
 
 */
+
+/* 
+Disadvantage of frameworks
+awful lot of similarities between a lot of sites you counter, due to similar use of framework.
+many new developers fall in the trap of using css frameworks too early in their education and not having practice writing vanilla CSS is very tempting. as a result, many developers do not get enough css practice under their belts to solidify the fundamentals of this very important language.
+the process of overriding a framework's styling or debugging style issues on your page becomes very difficult if you have weaker CSS fundamentals.
+frameworks can help you get up and running quickly - but they can constrain you in the long run. Once you’ve started a project using a framework it can be difficult to remove it. In the future, you (or your employer!) may have to decide whether or not to use a framework for a project and if so, which one.
+*/
