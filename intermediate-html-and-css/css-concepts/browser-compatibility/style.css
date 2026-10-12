@@ -33,3 +33,18 @@ this tool is helpful to check feature supported by the browsers or not
 https://caniuse.com/
 it is generally good advice to implement new features when they are supported by most common browsers. 
 */
+
+/* 
+Mobile Browsers:
+Traditionally, the web was desktop computer first. but the application was successful if it worked well on desktop browsers. but as smartphones have become more popular, 
+most devices mostly consist of smartphones and tablets. the most popular mobile operating systems are android and Apple's I-OS
+as you're a developing your applications you must also consider whether your application should be fully mobile compatible. 
+on IOS and iPadOS safari is the only supported browser in most regions. you can install firefox or chrome and even make them default but under the hood they are safari, using safari's webkit engine.
+another consideration for mobile browsers is the magnitude of different screen sizes it is virtually impossible to have every physical device available to test. and thankfully browsers provide a way to emulate other devices.
+*/
+
+/* 
+Assignment
+https://caniuse.com/
+https://adactio.com/journal/17428
+*/
