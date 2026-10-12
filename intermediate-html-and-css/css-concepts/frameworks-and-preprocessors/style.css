@@ -23,3 +23,21 @@ many new developers fall in the trap of using css frameworks too early in their 
 the process of overriding a framework's styling or debugging style issues on your page becomes very difficult if you have weaker CSS fundamentals.
 frameworks can help you get up and running quickly - but they can constrain you in the long run. Once you’ve started a project using a framework it can be difficult to remove it. In the future, you (or your employer!) may have to decide whether or not to use a framework for a project and if so, which one.
 */
+
+/* 
+Preprocessors overview:
+Preprocessors (aka precompilers) are languages that help you write CSS more easily.
+CSS preprocessors are essentially extensions to vanilla CSS that provide some extra functionality.
+
+some of the standard Preprocessors in use are SASS, LESS, and STYLUS.
+https://sass-lang.com/
+https://lesscss.org/
+https://stylus-lang.com/
+*/
+
+/* 
+Assignment
+https://medium.com/html-all-the-things/what-is-a-css-framework-f758ef0b1a11
+https://www.testmuai.com/blog/css-preprocessors-sass-vs-less-vs-stylus-with-examples/
+https://adamsilver.io/blog/the-disadvantages-of-css-preprocessors/
+*/
