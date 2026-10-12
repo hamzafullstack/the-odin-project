@@ -19,3 +19,10 @@ as companies compete for market share, different browsers are using different en
 because of these differences your application may behave differently in the browser.
 for your web development projects to have a broader reach, you must make sure that you're testing your web applications against browsers which are mostly used by users. Chrome, firefox, safari, other chromium based (microsoft's Edge, brave etc) for chromium browsers if it works in chrome it should work work other related browsers as well.
 */
+
+/* 
+Browser releases and new css features
+w3c world wide web consortium is the authority behind developing web standards to maximize accessibility and consistency of the web experience. W3C is also the authority to develop new features in CSS. 
+when browsers such as nexus and Netscape were released there was no such organization as W3C to help create more compatibility. your application could look and function differently in each browser.
+https://www.w3.org/
+*/
