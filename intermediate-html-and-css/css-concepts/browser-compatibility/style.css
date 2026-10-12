@@ -26,3 +26,10 @@ w3c world wide web consortium is the authority behind developing web standards t
 when browsers such as nexus and Netscape were released there was no such organization as W3C to help create more compatibility. your application could look and function differently in each browser.
 https://www.w3.org/
 */
+
+/* 
+when is it safe to use new features ?
+this tool is helpful to check feature supported by the browsers or not 
+https://caniuse.com/
+it is generally good advice to implement new features when they are supported by most common browsers. 
+*/
