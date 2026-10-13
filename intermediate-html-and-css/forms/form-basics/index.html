@@ -44,5 +44,18 @@
       text input accept any text input. you would use it to collect things like user's first and last names.
       -->
 
+      <!-- labels
+      an input on its own isn't very useful since the user will not know what kind of data they are supposed to provide. instead we can give our inputs a label to inform users what type of data they are excepted to enter.
+      to create a label we use the <label> element. the text we want displayed in the label will go between its opening and closing tags. 
+      -->
+        <form action="example.com/path" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id=first_name">
+        </form>
+        <!-- 
+        labels accept a for attribute, which associates it with a particular input. the input we want to associate with a label needs an id attribute with the same value as the label's for attribute.
+        when label is associated with an input and is clicked, it will focus the cursor on that input, ready for the user to input some data.
+        -->
+
 </body>
 </html>
