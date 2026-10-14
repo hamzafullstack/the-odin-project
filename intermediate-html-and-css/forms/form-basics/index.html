@@ -148,7 +148,52 @@
    <textarea>Some initial content</textarea>
    <!-- text area accept a couple of unique attributes that other form controls do not. that are the row and cols attribute. they allow you to control the initial height(row) and width(cols) of text area -->
     <textarea rows="20" cols="20">your text here</textarea>
-    
+
+    <!-- 
+    Selection elements
+    sometimes you will want users to select a value from a predefined list. this is where select elements will be useful.
+
+    Select dropdown.
+    the select element renders a dropdown list where users can select an option.
+    select element wraps option elements which are the options that can be used selected.
+    -->
+    <select name="Car">
+      <option value="mercedes">Mercedes</option>
+      <option value="tesla">Tesla</option>
+      <option value="toyota">Toyota</option>
+      <option value="bmw">BMW</option>
+      <option value="nissan">Nissan</option>
+      <option value="volvo">Volvo</option>
+    </select>
+    <!-- 
+    All the option elements should have a value attribute otherwise the text content inside it used this value be sent to the server when the form is submitted.
+
+    we can set one of the option to be default selected element when the browser first renders the form.
+    -->
+    <select name="Car">
+  <option value="mercedes">Mercedes</option>
+  <option value="tesla">Tesla</option>
+  <option value="volvo" selected>Volvo</option>
+  <option value="bmw">BMW</option>
+  <option value="mini">Mini</option>
+  <option value="ford">Ford</option>
+</select>
+<!-- 
+we may also split the list of options into groups using optgroup element.
+-->
+<select name="fashion">
+  <optgroup label="Clothing">
+    <option value="t_shirt">T-Shirts</option>
+    <option value="sweater">Sweaters</option>
+    <option value="coats">Coats</option>
+  </optgroup>
+  <optgroup label="Foot Wear">
+    <option value="sneakers">Sneakers</option>
+    <option value="boots">Boots</option>
+    <option value="sandals">Sandals</option>
+  </optgroup>
+</select>
+
 
 </body>
 </html>
