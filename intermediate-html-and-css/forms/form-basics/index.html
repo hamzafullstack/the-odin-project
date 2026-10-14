@@ -194,6 +194,46 @@ we may also split the list of options into groups using optgroup element.
   </optgroup>
 </select>
 
+<!-- 
+Radio buttons
+when we have a small list of items like 4/5 its a better user-experience to have them displayed on the page instead of hiden behind a dropdown.
+in this case we can use radio buttons.
+-->
+<h1>Ticket Type</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+<div>
+<input type="radio" id="senior" name="ticket_type" value="senior">
+<label for="senior">Senior</label>
+</div>
+<!-- when you select one of the radio button, and then select another it will deselect the first one. -->
+
+<!-- 
+we can set  the default selected radio button by adding the checked attribute to it.
+-->
+<h1>Ticket Type</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult" checked>
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
+
 
 </body>
 </html>
