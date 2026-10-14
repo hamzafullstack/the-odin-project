@@ -66,6 +66,41 @@
         <input type="text" id="first_name" placeholder="Shoaib.....">
 
         <!-- use placeholder text to demonstrate how text should be entered and formatted. -->
-         
+         <!-- 
+        The name attribute:
+        we need to use labels so that users understand what the data entered into an input field will represent. just like that we also need to let the backend, where we send our data, know what each piece of data represents.
+        we do this by adding a name attribute to our inputs.
+         -->
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name">
+        <!-- 
+        The name attribute serves as a reference to the data inputted into a form control after submitting it. you can think of it as variable name for the input. 
+        form input should always have a name attribute otherwise it will be ignored when a the form is submitted.
+        -->
+        <form action="httpbin.org/post" method="post">
+          <div>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name">
+          </div>
+          <div>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name">
+          </div>
+          <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age">
+          </div>
+          <button type="submit">submit</button>
+        </form>
+
+        <!-- 
+        The output from the response is the form object
+        "form": {
+    "age": "33",
+    "first_name": "John",
+    "last_name": "Doe"
+  },
+
+        -->
 </body>
 </html>
