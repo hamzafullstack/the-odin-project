@@ -7,3 +7,19 @@
     grid-template-columns: 1em auto;
     gap: 0.5em;
 }
+/* 
+step1 hide the the native checkbox input.
+we only need to set appearance: none; this removes nearly inherited browser styles and give us access to style the input's pseudo elements.
+*/
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+/* 
+
+*/
