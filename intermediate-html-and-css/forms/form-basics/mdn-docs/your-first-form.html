@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+    <link rel="stylesheet" href="your-first-form.css">
+</head>
+<body>
+    <!--what are the web forms
+    web forms are on of the main points of interaction between a user and a website or application. forms allow users to enter data.
+    -->
+    <!--Designing your form
+    before starting to code, its always better to step back and take the time to think about your form. designing a quick mockup will you to define the right set of data you want to ask your user to enter..
+    From a user expereince (UX) point of view, it's important to remember that the bigger your form, the more you risk frustrating people and lose users. so keep it simple and stay focused.
+    -->
+    <form action="example.com/path" method="post">
+       <fieldset>
+        <legend>Contact</legend>
+        <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Shoaib...">
+        </p>
+        <p>
+        <label for="user_email">Email:</label>
+        <input type="email" name="mail" id="user_email" placeholder="you@mailer.com">
+        </p>
+        <p>
+            <label for="msg">Message:</label>
+            <textarea name="user_message" id="msg"></textarea>
+        </p>
+       </fieldset> 
+    </form>
+
+    <!--
+    https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form
+    note: sketch image for reference is used from the mdn..
+    credit goes to mdn-docs article writer 
+    -->
+
+</body>
+</html>
