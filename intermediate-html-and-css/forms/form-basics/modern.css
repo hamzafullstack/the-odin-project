@@ -21,5 +21,23 @@ input[type="checkbox"] {
   margin: 0;
 }
 /* 
+step2: custom unchecked checkbox styles
+for custom checkbox, we'll update the box styles on the base input elements.
 
 */
+input[type='checkbox'] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.form-control + .form-control {
+    margin-top: 1em;
+}
