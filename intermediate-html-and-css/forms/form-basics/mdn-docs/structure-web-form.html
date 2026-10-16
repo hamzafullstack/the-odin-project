@@ -39,5 +39,15 @@
 </p>
 
 
+<!--Mutliple label
+strictly speaking you can put multiple labels on a single widget, but this is not a good idea as some assistive technologies can have trouble handling them.-->
+
+<p>Please complete all required (*) fields.</p>
+<!-- But this is probably best: -->
+<div>
+  <label for="username">Name *:</label>
+  <input id="username" type="text" name="username" required />
+</div>
+
 </body>
 </html>
