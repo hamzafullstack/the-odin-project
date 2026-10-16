@@ -48,6 +48,55 @@ strictly speaking you can put multiple labels on a single widget, but this is no
   <label for="username">Name *:</label>
   <input id="username" type="text" name="username" required />
 </div>
+<!--Common HTML structure used with forms
+you can use all HTML Markup power to create forms
+lists are recommanded for structuring multiple checkboxes or radio buttons.
+in addition to the fieldset elements it is also common practice to use HTML titles h1 h2 and sectioning <section> to structure complex forms.
+
+    Building a form structure.
+-->
+<form action="">
+    <h1>Payment Form</h1>
+    <p>Please complete all required (*) fields.</p>
+    <section>
+        <h2>Contact information</h2>
+        <fieldset>
+            <legend>Title</legend>
+            <ul>
+                <li>
+                    <label for="title_1">
+                        <input type="radio" name="title" id="title_1" value="A">
+                        Ace
+                    </label>
+                </li>
+                <li>
+                    <label for="title_2">
+                        <input type="radio" name="title" id="title_2" value="Q">
+                        Queen
+                    </label>
+                </li>
+                <li>
+                    <label for="title_3">
+                        <input type="radio" name="title" id="title_3" value="K">
+                        King
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <p>
+            <label for="name">Name *:</label>
+            <input type="text" name="username" id="name" required>
+        </p>
+        <p>
+            <label for="email">Email *:</label>
+            <input type="email" name="user-email" id="email" required>
+        </p>
+        <p>
+            <label for="pwd">Password *:</label>
+            <input type="password" name="password" id="pwd" required>
+        </p>
+    </section>
+</form>
 
 </body>
 </html>
