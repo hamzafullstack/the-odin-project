@@ -96,6 +96,29 @@ in addition to the fieldset elements it is also common practice to use HTML titl
             <input type="password" name="password" id="pwd" required>
         </p>
     </section>
+    <section>
+        <h2>Payment information</h2>
+        <p>
+            <label for="card">
+                <span>Card type:</span>
+            </label>
+            <select name="card" id="user-card">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+                <option value="up">Union Pay</option>
+                <option value="pak">PayPak</option>
+            </select>
+        </p>
+        <p>
+            <label for="number">Card Number *:</label>
+            <input type="tel" name="card-number" id="number" required>
+        </p>
+        <p>
+            <label for="expiration">Expiry Date *:</label>
+            <input type="text" name="expiration" id="expiration"required placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" >
+        </p>
+    </section>
 </form>
 
 </body>
