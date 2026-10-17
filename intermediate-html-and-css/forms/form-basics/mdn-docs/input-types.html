@@ -41,8 +41,21 @@
   step="1000"
   value="250000" />
 <output class="price-output" for="price"></output>
-
-
+<!--Date and Time Picker-->
+<input type="date" name="date" id="date" />
+<input type="datetime-local" name="datetime" id="datetime" />
+<input type="month" name="month" id="month" />
+<input type="time" name="time" id="time" />
+<input type="week" name="week" id="week" />
+<!--Constraining date and time values.-->
+<label for="myDate">When are you available this summer?</label><br />
+<input
+  type="date"
+  name="myDate"
+  min="2025-06-01"
+  max="2025-08-31"
+  step="7"
+  id="myDate" />
 
 
 <script>
