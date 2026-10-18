@@ -1,0 +1,7 @@
+Hey there! if you're reading this mayebe you're concern about the licensing of font. these fonts are downloading from dafont.com. i downloaded and used for educational purpose only as following MDN-Docs walkthrough tutorial..
+
+IF YOU HAVE ANY OBJECTION
+Kindly open an issue on my this repository regarding the font licensing. i will buy the rights if its suitable and fit my budget or remove it from the practice project.
+
+thank you
+Happy Coding, and stay safe.
