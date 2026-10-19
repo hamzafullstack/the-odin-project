@@ -105,5 +105,23 @@ form action="#" method="get">
   <button type="submit">Book</button>
 </form>
 
+<!--
+pattern validations
+to ensure we get the correct information from the users, we will often want to ensure data matches a particular pattern.
+Real-world applications include checking if a password, credit card number, or a zipcode is in the correct format.
+you often use Regex - regular expressions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+
+-->
+<form action="#" method="get">
+  <label for="zip_code">
+    Postal / Zip Code:
+    <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
+  </label>
+
+  <button type="submit">Submit</button>
+</form>
+
+
 </body>
 </html>
