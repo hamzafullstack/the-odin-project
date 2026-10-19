@@ -42,5 +42,19 @@ form {
 </form>
 <!--To ensure a good user experience and to meet accessibility guidelines, we should always indicate which is fields are required.-->
 
+<!--
+Text length validations
+sometimes we will want users to enter a minimum or maximum amount of text into a field. Real-World examples of using validations would be the old 140 charecter limit that x (formerly twitter) used to have in its status field..
+
+Minimum length validation.
+to add minimum length validation we give the form control a minlength attribute.
+
+-->
+<form action="#" method="get">
+  <textarea placeholder="What's happening?" minlength="3"></textarea>
+
+  <button type="submit">Tweet</button>
+</form>
+
 </body>
 </html>
