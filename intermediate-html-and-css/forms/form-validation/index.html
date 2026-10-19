@@ -74,5 +74,36 @@ HTML allows us to apply as many validations as we wish to a form control.
   <button type="submit">Tweet</button>
 </form>
 
+<!--
+Number range validations
+just like we often need to control the length of text-based form controls, there will be many situations where we will want to control the range of values users can enter into numbers.
+
+we can do this with the min and max attributes, which allows us to change set the lower and upper bounds of the value entered into the form control.
+
+min and max attributes only work with number-based form controls.
+mdn reference 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/max#syntax
+
+some real-world use cases for using these validations would be limiting the quanity on a product order form or choosing the number of passengers on a flight booking form.
+-->
+<p>Min validation</p>
+form action="#" method="get">
+  <label for="quantity">
+    Quantity <input type="number" id="quantity" name="quantity" min="1" value="0">
+  </label>
+
+  <button type="submit">Place Order</button>
+</form>
+
+<p>max validation</p>
+<form action="#" method="get">
+  <label for="passengers">
+    Passengers
+    <input type="number" id="passengers" name="passengers" max="5" value="0">
+  </label>
+
+  <button type="submit">Book</button>
+</form>
+
 </body>
 </html>
