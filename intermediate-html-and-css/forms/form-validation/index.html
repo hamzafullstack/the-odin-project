@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form-Validation</title>
+    <style>
+        form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  max-width: 250px;
+  gap: 12px;
+}
+    </style>
 </head>
 <body>
     <!--Form Validation
     validations allow us to set specific constraints or rules that determine what data users can enter into an input.
     validations are a vital ingredient in well-designed forms. they help protect our backend systems from receiving incorrect data..
     -->
+
+    <!--
+    Required validation
+    we will often want to ensure specific fields have been filled before submiting the form.
+    -->
+    <form action="#" method="get">
+  <label for="user_email">
+    *Email:
+    <input type="email" id="user_email" name="user_email" required>
+  </label>
+
+  <label for="user_password">
+    *Password:
+    <input type="password" id="user_password" name="user_password" required>
+  </label>
+
+  <button type="submit">Login</button>
+</form>
+<!--To ensure a good user experience and to meet accessibility guidelines, we should always indicate which is fields are required.-->
+
 </body>
 </html>
