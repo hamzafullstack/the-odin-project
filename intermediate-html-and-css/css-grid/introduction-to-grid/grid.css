@@ -4,4 +4,10 @@ grid is a module to css. this layout tool has long been in development. fun fact
 
 Grid is often praised for easy placement of items in a two-dimensional layout. but grid can be used for one-dimensional layout too.
 one advantage for developers is if they start off with only one row of items, they can add additional row later..
+
+there is a lot of similarities between flexbox and CSS-grid both use parent containers with child items, they have similar property names for alignment and positioning. but there are also a lot differences between the two and opinions on how each module should be used.
 */
+
+body {
+    display: grid;
+}
