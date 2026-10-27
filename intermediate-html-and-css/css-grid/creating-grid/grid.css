@@ -1,0 +1,9 @@
+/* 
+In css an element turned into a grid container with the property display grid or display inline-grid.
+ */
+ .container {
+    display: grid;
+ }
+ /* 
+ note: that only the direct child elements will become grid items here. if we had another element as a child under one  of these elements it would not be a grid item.
+ */
