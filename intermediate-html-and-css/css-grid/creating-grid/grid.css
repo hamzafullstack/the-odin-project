@@ -16,3 +16,10 @@ In css an element turned into a grid container with the property display grid or
  /* 
  just like flexbox, grid items can also be grid containers.
  */
+
+  /* 
+ lines and tracks in grid.
+ a lot of resources on css grid like to show you boxes and outlined grid tables right from the start.
+ but if your grid container and grid items dont have any borders you won't actually see these lines on the page.
+ if you inspect these elements on a webpage using developer tools, you will notice grid elements in the code. the layout options of the developer tools allow you to select an overlay that can show these invisible lines, tracks and areas of the grid.
+ */
