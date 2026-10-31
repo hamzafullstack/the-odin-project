@@ -89,3 +89,11 @@ The gap between grid rows and column is known as the gutter or alley. Gap sizes 
   /* a lot of gap to our rows to highlight the difference */
   row-gap: 40px;
 }
+
+/* Assignments:
+ https://css-tricks.com/complete-guide-css-grid-layout/
+
+ https://www.youtube.com/watch?v=8_153Zz4YI8&ab_channel=WesBos
+
+ https://developer.chrome.com/docs/devtools/css/grid/
+*/
