@@ -70,3 +70,22 @@ we can set the implicit grid track sizes using the grid-auto-rows and grid-auto-
 by default CSS Grid add additional content with implicit rows. this means extra elements would keep being added further down the grid in a vertical fashion.
 but can be nset using the grid-auto-flow: column property.
 */
+
+/* GAP..
+The gap between grid rows and column is known as the gutter or alley. Gap sizes can be adjusted separately for rows and columns. using column-gap and row-gap
+*/
+
+.container-gap{
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+.container-gap > div {
+  border: 1px solid hotpink;
+}
+/* gap */
+.container-gap {
+  column-gap: 10px;
+  /* a lot of gap to our rows to highlight the difference */
+  row-gap: 40px;
+}
