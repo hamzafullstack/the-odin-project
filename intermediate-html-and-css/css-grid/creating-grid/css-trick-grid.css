@@ -1,0 +1,11 @@
+/* 
+Display
+defines the element as a grid container and etablishes a new grid formatting context for its contents.
+grid: gennerates a block level grid
+inline-grid: generates an inline-level grid.
+*/
+.container {
+    display: grid;
+    display: inline-grid;
+}
+
