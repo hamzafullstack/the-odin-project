@@ -49,3 +49,15 @@ line-name: an arbitrary name of your choosing.
 .item {
   grid-column-start: col-start 2;
 }
+
+/* 
+The fr unit allows you to set the size of track as a fraction of the free space of the grid container....
+for example this will set each item to one third the width of the grid container....
+*/
+.container{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+/* 
+the free space is calculated after any non-flexible items...
+*/
