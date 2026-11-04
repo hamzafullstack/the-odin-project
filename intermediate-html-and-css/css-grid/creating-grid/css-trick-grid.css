@@ -36,3 +36,16 @@ line-name: an arbitrary name of your choosing.
     grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
     grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
 }
+/* if your name definition contains repeating parts you can use the repeat() notation to streamline things */
+.container {
+  grid-template-columns: repeat(3, 20px [col-start]);
+}
+/* which is equivalent to this.. */
+.container {
+  grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+}
+
+/* if multiple lines share the same name, they can be referenced by their line name and count. */
+.item {
+  grid-column-start: col-start 2;
+}
