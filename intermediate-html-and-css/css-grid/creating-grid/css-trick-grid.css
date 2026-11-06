@@ -83,3 +83,8 @@ that is equivalent to this:
 */
 grid-template-rows: [row1-start] 25px [row1-end];
 }
+
+/* 
+grid template areas
+defines a grid template by referencing the names of the grid areas which are specified with grid-area property.
+*/
