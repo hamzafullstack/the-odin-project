@@ -61,3 +61,25 @@ for example this will set each item to one third the width of the grid container
 /* 
 the free space is calculated after any non-flexible items...
 */
+
+/* 
+grid-template is shortand for grid css.
+
+*/
+/* 
+grid template: none..
+*/
+.container {
+  grid-template: none;
+}
+/* 
+it also accepts a more complex but quite handy syntax for specifying all three.
+*/
+.container {
+  grid-template: 
+  [row1-start] 'header header header' 25px [row1-end];
+  /* 
+that is equivalent to this:
+*/
+grid-template-rows: [row1-start] 25px [row1-end];
+}
