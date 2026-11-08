@@ -165,3 +165,15 @@ A shorthand for setting all of the following properties in a single declaration 
 /* justify-items
 aligns grid items along the inline (row) axis, as opposed to align-items which aligns along the block (column axis). this value applies to all grid items inside the container
 */
+
+/* values:
+stretch: (default): fills the whole width of the cell.
+start: align items to be flush with the start edge of their cell.
+center: Aligns items in the center their cell.
+
+.container {
+  justify-items: start | end | center | stretch;
+}
+
+
+*/
