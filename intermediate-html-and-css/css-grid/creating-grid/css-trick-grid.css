@@ -118,3 +118,46 @@ that will create a grid that's four column wide by three rows tall. etc..
 each row in your declaration needs to have the same number of cells...
 you can use any number of adjacent periods to declare a single empty cell..
 */
+
+/* Grid
+A shorthand for setting all of the following properties in a single declaration grid-template-rows, grid-template-columns, grid-template-areas, grid-template-auto-rows etc etc
+*/
+
+/* the followintg two code blocks are equivalent. */
+.container {
+  grid: 100px 300px / 3fr 1fr;
+}
+.container {
+  grid-template-rows: 100px 300px;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* the following two code blocks are equivalent */
+.container {
+  grid: auto-flow / 200px 1fr;
+}
+.container {
+  grid-auto-flow: row;
+  grid-template-columns: 200px 1fr;
+}
+/* also this one equivalent */
+.container {
+  grid: auto-flow dense 100px / 1fr 2fr;
+}
+
+.container {
+  grid-auto-flow: row dense;
+  grid-auto-rows: 100px;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* also equivalent */
+.container {
+  grid: 100px 300px / auto-flow 200px;
+}
+
+.container {
+  grid-template-rows: 100px 300px;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
+}
