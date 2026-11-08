@@ -177,3 +177,19 @@ center: Aligns items in the center their cell.
 
 
 */
+
+/* Examples */
+.container {
+  justify-items: start;
+
+}
+.container {
+  justify-items: end;
+}
+.container {
+  justify-items: center;
+}
+.container {
+  justify-items: stretch;
+}
+/* This behavior can also be set on individual grid items via the justify-self property */
