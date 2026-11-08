@@ -87,4 +87,34 @@ grid-template-rows: [row1-start] 25px [row1-end];
 /* 
 grid template areas
 defines a grid template by referencing the names of the grid areas which are specified with grid-area property.
+repeating thye name of a grid area causes the content to span those cells. a period signifies an empty cell. the syntax itself provides a visualization of the structure of the grid.
+*/
+
+.item-1 {
+  grid-area: header;
+}
+.item-2 {
+  grid-area: main;
+}
+.item-3 {
+  grid-area: sidebar;
+}
+.item-4 {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header"
+  "main main . sidebar"
+  "footer footer footer footer";
+}
+/* 
+that will create a grid that's four column wide by three rows tall. etc..
+
+each row in your declaration needs to have the same number of cells...
+you can use any number of adjacent periods to declare a single empty cell..
 */
