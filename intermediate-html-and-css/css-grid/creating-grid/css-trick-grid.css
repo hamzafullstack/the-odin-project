@@ -161,3 +161,7 @@ A shorthand for setting all of the following properties in a single declaration 
   grid-auto-flow: column;
   grid-auto-columns: 200px;
 }
+
+/* justify-items
+aligns grid items along the inline (row) axis, as opposed to align-items which aligns along the block (column axis). this value applies to all grid items inside the container
+*/
