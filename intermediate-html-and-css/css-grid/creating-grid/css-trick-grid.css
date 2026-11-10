@@ -274,3 +274,33 @@ this property aligns the grid along the inline row axis (as opposed to align-con
 /* align-content
 This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
 */
+
+.container {
+  align-content: start;
+  /* Aligns the grid to be flush with the start edge of the grid container.. */
+}
+.container {
+  align-content: end;
+  /* align the grid to be flush with the end of edge of the grid container.. */
+}
+.container {
+  align-content: center;
+  /* aligns the grid in the center of the grid container. */
+}
+.container {
+  align-content: stretch;
+  /* resizes the grid items to allow the grid to fill the full height of the grid container.. */
+}
+.container {
+  align-content: space-around;
+  /* places an even amount of of space between grid item with half-sized spaces on the far ends... */
+}
+.container {
+  align-content: space-between;
+  /* places an even amount of space between each grid item with no space at the far ends.... */
+}
+.container {
+  align-content: space-evenly;
+  /* places an even amount of space between each grid item including the far ends... */
+}
+
