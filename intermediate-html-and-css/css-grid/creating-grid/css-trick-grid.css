@@ -270,3 +270,7 @@ this property aligns the grid along the inline row axis (as opposed to align-con
   justify-content: space-evenly;
   /* places an even amount of space between each grid item including the far ends. */
 }
+
+/* align-content
+This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
+*/
