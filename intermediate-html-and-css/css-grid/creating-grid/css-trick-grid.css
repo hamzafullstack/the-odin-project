@@ -193,3 +193,18 @@ center: Aligns items in the center their cell.
   justify-items: stretch;
 }
 /* This behavior can also be set on individual grid items via the justify-self property */
+
+
+/* Align-items
+Align grid items along the block (column) axis (as opposed to justify-items which aligns along the inline(row) axis)
+this value applies to all grid items inside the container.
+
+values:
+Stetch(default): fills the whole height of the cell(this value is default)
+Start: ALigns items to be flush with the start edge of their cell.
+End: aligns items to be flush with end edge of their cell.
+center: align items in the center of their cell.
+baseline: align items along text baseline. there are modifiers to be baseline - first baseline from the first or last line in the case of multiline text.
+*/
+
+/* example */
