@@ -208,3 +208,20 @@ baseline: align items along text baseline. there are modifiers to be baseline - 
 */
 
 /* example */
+.container {
+  align-items: start;
+  /* start edge of their cell. */
+}
+.container {
+  align-items: end;
+  /* end edge of their cell. */
+}
+.container {
+  align-items: center;
+  /* align items to center of their cell. */
+}
+.container {
+  align-items: stretch;
+  /* default value stretch.... */
+}
+
