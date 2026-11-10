@@ -225,3 +225,14 @@ baseline: align items along text baseline. there are modifiers to be baseline - 
   /* default value stretch.... */
 }
 
+/* place-items
+place-items set both the align-items and justify-items property in a single declaration.
+
+this can be very useful for super quick multi-directional centering....
+
+*/
+
+.center {
+  display: grid;
+  place-items: center;
+}
