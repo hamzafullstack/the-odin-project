@@ -236,3 +236,8 @@ this can be very useful for super quick multi-directional centering....
   display: grid;
   place-items: center;
 }
+
+/* justify-content
+this property aligns the grid along the inline row axis (as opposed to align-content which aligns the grid along the block (column) axis.)
+*/
+
