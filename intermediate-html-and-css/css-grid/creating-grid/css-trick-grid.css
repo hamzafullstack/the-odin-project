@@ -304,3 +304,7 @@ This property aligns the grid along the block (column) axis (as opposed to justi
   /* places an even amount of space between each grid item including the far ends... */
 }
 
+/* place-content
+place-content set both the align-content and justify-content properties in a single declaration....
+
+*/
