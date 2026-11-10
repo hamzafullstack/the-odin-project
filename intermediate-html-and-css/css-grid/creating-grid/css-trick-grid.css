@@ -241,3 +241,32 @@ this can be very useful for super quick multi-directional centering....
 this property aligns the grid along the inline row axis (as opposed to align-content which aligns the grid along the block (column) axis.)
 */
 
+/* Examples: */
+.container {
+  justify-content: start;
+  /* align the grid to be flush with the start edge of the grid container. */
+}
+.container {
+  justify-content: end;
+  /* align the grid to be flush with end edge of the grid container. */
+}
+.container {
+  justify-content: center;
+  /* align the grid to be flush at the center */
+}
+.container {
+  justify-content: stretch;
+  /* stretch the content to full the width of the container */
+}
+.container {
+  justify-content: space-around;
+  /* places an even amount of space between each grid item, with half-sized spaces on the far ends. */
+}
+.container {
+  justify-content: space-between;
+  /* places an even amount of space between each item, with no space at the far ends. */
+}
+.container {
+  justify-content: space-evenly;
+  /* places an even amount of space between each grid item including the far ends. */
+}
