@@ -407,3 +407,40 @@ The gap property explicitly controls the space between flex items it applies tha
 }
 
 /* Child Item Properties.. */
+
+/* grid-column-* and grid-row-*
+determines a grid item's location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins and grid-column-end/grid-row-end is the line where the item ends..
+ */
+
+ /* line : can be a number to refer to a numbered grid line or a name to refer to a named grid line.. */
+
+ /* 
+ span number : the item will span across the provided number of grid tracks.
+ */
+
+ /* 
+ span <name>: the item will span across until it hits the next line with the provided name.
+ */
+
+ /* auto : indicates auto-placement, an automatic span, or a default span of one... */
+
+ .item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  /* 
+  
+  */
+}
+
+.item-b {
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+
+/* if no grid-column-end/grid-row-end is declared, the item will span 1 track by default..
+items can overlap each other. you can use z-index to control their stacking order....
+*/
