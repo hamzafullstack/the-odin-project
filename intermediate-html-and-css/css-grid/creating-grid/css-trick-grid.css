@@ -340,4 +340,14 @@ track-size can be a length, a percentage, or a fraction of the free space in the
 if you have grid items that you don't explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items... this property controls how the auto-placement algorithm works...
 
 values:
+
+row: Tells the auto-placement algorithm to fill in each row in turn adding new rows as necessary(default).
+
+column: Tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary..
+
+dense: Tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later,,..
+
+
+Note: 
+
  */
