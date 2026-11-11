@@ -349,5 +349,16 @@ dense: Tells the auto-placement algorithm to attempt to fill in holes earlier in
 
 
 Note: 
+that dense only changes the visual order of your items and might cause them to appear out of order, which is bad for accrssibility..
 
  */
+
+.container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px;
+  grid-template-rows: 30px 30px;
+  grid-auto-flow: row;
+  /* 
+  You define a grid with five columns and two rows and set grid-auto-flow to row (which is also the default)..
+  */
+} 
