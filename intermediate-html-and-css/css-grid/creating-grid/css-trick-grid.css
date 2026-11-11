@@ -393,3 +393,16 @@ that dense only changes the visual order of your items and might cause them to a
   here we set grid-auto-flow to column... 
   */
 }
+/* GAP
+The gap property explicitly controls the space between flex items it applies that spacing only betweeen items not on the outer edges.... its a shorthand that combines the row-gap and column-gap properties...
+*/
+
+.container {
+  display: flex;
+  /* ... */
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
