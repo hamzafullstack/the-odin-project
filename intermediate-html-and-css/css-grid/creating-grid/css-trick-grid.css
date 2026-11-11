@@ -331,3 +331,7 @@ track-size can be a length, a percentage, or a fraction of the free space in the
   grid-column: 5 / 6;
   grid-row: 2 / 3;
 }
+
+.container{
+  grid-auto-columns: 60px;
+}
