@@ -335,3 +335,9 @@ track-size can be a length, a percentage, or a fraction of the free space in the
 .container{
   grid-auto-columns: 60px;
 }
+
+/* grid-auto-flow
+if you have grid items that you don't explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items... this property controls how the auto-placement algorithm works...
+
+values:
+ */
