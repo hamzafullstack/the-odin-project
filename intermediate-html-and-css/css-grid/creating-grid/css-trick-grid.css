@@ -502,3 +502,8 @@ Aligns a grid item inside a cell along the inline (row) axis (as opposed to alig
 /* 
 TO set aligment for all the items in a grid, this behavior can also be set on the grid container via the justify-items property...
 */
+
+/* align-self
+Aligns a grid item inside a cell along the block (column) axis... This value applies to the content inside a single grid item.
+*/
+
