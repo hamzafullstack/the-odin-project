@@ -444,3 +444,10 @@ determines a grid item's location within the grid by referring to specific grid 
 /* if no grid-column-end/grid-row-end is declared, the item will span 1 track by default..
 items can overlap each other. you can use z-index to control their stacking order....
 */
+
+/* grid-column and grid-row 
+shorthand for grid-column-start and grid-column-end and grid-row-start + grid-row-end respectively..
+
+start-line / end-line each one accepts all the same values as the longhand version including span..
+*/
+
