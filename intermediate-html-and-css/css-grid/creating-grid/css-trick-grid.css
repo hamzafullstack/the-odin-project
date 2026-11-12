@@ -451,3 +451,8 @@ shorthand for grid-column-start and grid-column-end and grid-row-start + grid-ro
 start-line / end-line each one accepts all the same values as the longhand version including span..
 */
 
+.item-c {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+}
+/* if no end line value is declared the item will span 1 track by default,.. */
