@@ -456,3 +456,21 @@ start-line / end-line each one accepts all the same values as the longhand versi
   grid-row: third-line / 4;
 }
 /* if no end line value is declared the item will span 1 track by default,.. */
+
+/* grid-area
+Gives an item a name so that it can be referenced by a template created with the grid-template-areas property.
+
+name: A name of your choosing.
+row-start / column-start / column-end / row-end can be numbers or named lines..
+*/
+
+/* example...
+as a way to assign a name to the item*/
+.item-d {
+  grid-area: header;
+}
+
+/* as the short-shorthand. */
+.item-d {
+  grid-area: 1 / col-4-start / last-line / 6;
+}
