@@ -520,3 +520,24 @@ Aligns a grid item inside a cell along the block (column) axis... This value app
 
 /* To align all the items in the grid, this behavior can also be set on the grid container via the align-items property.. */
 
+/* place-self
+place-self sets both the align-self and justify-self properties in a single declaration..
+
+values:
+auto: The default alignment for the layout mode.
+align-self and justify-self : The first value sets aligin-self, the second value justify-self. if the second value is omitted the first value is assigned to both properties....
+
+*/
+
+.items {
+  place-self: center;
+  /* item get centered in the cell.. */
+
+  place-self: stretch;
+  /* stretch to the cell... - default */
+
+  place-self: center stretch;
+  /* center and stretch.. */
+}
+
+/* All major browsers except microsoft's edge support the place-self shorthand property... */
