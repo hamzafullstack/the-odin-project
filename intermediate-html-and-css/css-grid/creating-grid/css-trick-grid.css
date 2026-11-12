@@ -507,3 +507,16 @@ TO set aligment for all the items in a grid, this behavior can also be set on th
 Aligns a grid item inside a cell along the block (column) axis... This value applies to the content inside a single grid item.
 */
 
+.items {
+  align-self: stretch;
+  /* stretch: (Default) fills thge whole height of the cell. */
+  align-self: start;
+  /* start: Aligns the grid item to be flush with the start edge of the cell.. */
+  align-self: end;
+  /* end: aligns the grid item to be flush with the end edge of the cell. */
+  align-self: center;
+  /* center: aligns the grid item in the center of the cell */
+}
+
+/* To align all the items in the grid, this behavior can also be set on the grid container via the align-items property.. */
+
