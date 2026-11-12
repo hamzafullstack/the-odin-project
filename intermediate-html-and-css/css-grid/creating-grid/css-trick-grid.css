@@ -478,3 +478,27 @@ as a way to assign a name to the item*/
 /* justify-self
 Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block(column) axis). This applies to be a grid item inside a single cell.
 */
+
+.item-a {
+  justify-self: start;
+  /* start: aligns the grid item to be flush with the start edge of the cell.. */
+}
+
+.item-b {
+  justify-self: end;
+  /* end: aligns the grid item to be flush with the end edge of the cell. */
+}
+
+.item-c {
+  justify-self: center;
+  /* center: aligns the grid item in the center of the cell. */
+}
+
+.item-d {
+  justify-self: stretch;
+  /* stretch: fills the whole width of the cell (this is the default) */
+}
+
+/* 
+TO set aligment for all the items in a grid, this behavior can also be set on the grid container via the justify-items property...
+*/
