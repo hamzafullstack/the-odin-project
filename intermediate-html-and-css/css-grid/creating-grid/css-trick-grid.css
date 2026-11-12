@@ -474,3 +474,7 @@ as a way to assign a name to the item*/
 .item-d {
   grid-area: 1 / col-4-start / last-line / 6;
 }
+
+/* justify-self
+Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block(column) axis). This applies to be a grid item inside a single cell.
+*/
