@@ -564,3 +564,34 @@ min-content: the minimum size of the content.
 max-content: maximum size of the content.
 auto: this keyword is a lot like fr units except that they lose the fight in sizing against fr units when allocating the remaining space..
 */
+
+/* Sizing Functions
+fit-content() : uses the space available but never less than min-content and never more than max-content.
+
+max() : The CSS max() function takes two or more comma-separated arguments of spacing values, evaluates them, and returns the largest value of the bunch.
+
+minmax() : the css minmax() function is used exclusively with css grid to define a size range for grid tracks.. it lets you specify two arguments a minimum size and a maximum size for a track.. allowing the grid track to grow and shrink within the range depending on the available space.
+
+*/
+
+/* repeat () function can save some typing.. */
+.container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  /* easier with repeat */
+  grid-template-columns: repeat(8, 1fr);
+
+  /* specially when.: */
+  grid-template-columns: repeat(8, minmax(10px, 1fr));
+}
+/* repeat() can get extra fancy when combined with keywords:
+
+auto-full : fit as many possible columns as possible on a row even if they are empty..
+auto-fit : fit whatever columns there are into the space. prefer expanding columns to fill space rather than empty columns.
+
+This bears the most famous snippet in all of css grid and one of the all-time great css tricks...
+*/
+
+.container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
