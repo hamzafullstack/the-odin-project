@@ -556,3 +556,11 @@ fractional units also much friendly in combination with other units.
 .container {
   grid-template-columns: 50px min-content 1fr;
 }
+
+/* Keyword Values...
+when sizing rows and columns you can use all the lengths you are used to, like px rem, %, etc. but you also have keywords.
+
+min-content: the minimum size of the content. 
+max-content: maximum size of the content.
+auto: this keyword is a lot like fr units except that they lose the fight in sizing against fr units when allocating the remaining space..
+*/
