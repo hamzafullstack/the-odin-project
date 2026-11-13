@@ -541,3 +541,18 @@ align-self and justify-self : The first value sets aligin-self, the second value
 }
 
 /* All major browsers except microsoft's edge support the place-self shorthand property... */
+
+/* special units, Values, and functions.. */
+
+/* The fr Unit 
+You'll likely end up using a lot of fractional units in CSS Grid like 1fr. they essentially mean portion of the remaining space..
+*/
+.container {
+  grid-template-columns: 1fr 3fr;
+}
+/* means, loosely, 25% 75% except that those percentage values are much more firm than fractional units are..
+fractional units also much friendly in combination with other units.
+*/
+.container {
+  grid-template-columns: 50px min-content 1fr;
+}
