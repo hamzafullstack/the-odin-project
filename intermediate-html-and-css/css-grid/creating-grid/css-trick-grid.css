@@ -595,3 +595,7 @@ This bears the most famous snippet in all of css grid and one of the all-time gr
 .container {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+/* Subgrid
+Subgrid is an extremely useful feature of grids that allows grid items to have a grid of their own that inherits grid lines from the parent grid..
+*/
