@@ -599,3 +599,21 @@ This bears the most famous snippet in all of css grid and one of the all-time gr
 /* Subgrid
 Subgrid is an extremely useful feature of grids that allows grid items to have a grid of their own that inherits grid lines from the parent grid..
 */
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-item {
+  grid-column: 2 / 7;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.child-of-grid-item {
+  /* gets to participate on parent grid! */
+  grid-column: 3 / 6;
+}
+/* 
+it's also useful to know about display: contents;. this is not the same as subgrid, but it can be a useful tool sometimes in a similar fashion...
+*/
