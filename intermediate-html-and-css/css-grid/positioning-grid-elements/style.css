@@ -28,3 +28,9 @@ Grid lines are what we use to position grid items...
 
 in chrome's developer tool in layout pane you can selecting grid overlay you can inspect the grid lines.. and debug it easily...
 */
+
+/* cells..
+the space in a grid shared by a single row track and a single column track is called a grid cell. you can think of a grid cell in a spreadsheet, a space defined by a row, column cordinate.
+ by default, each child element of a grid container will occupy one cell...
+ 
+*/
