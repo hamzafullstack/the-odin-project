@@ -19,3 +19,12 @@ if we wanted to create a 3x3 grid with 100 pixel rows and 100px columns we need 
 .last-column {
     background-color: lightblue;
 }
+
+/* Lines..
+Whenever we create grid tracks, grid lines are created implicitly. This is important. grid lines are only created after our grid tracks have been defined.
+every track has a start line and an end line. The lines are numbered from left to right and top to bottom starting at 1...
+
+Grid lines are what we use to position grid items...
+
+in chrome's developer tool in layout pane you can selecting grid overlay you can inspect the grid lines.. and debug it easily...
+*/
