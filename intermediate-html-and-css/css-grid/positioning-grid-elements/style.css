@@ -3,3 +3,19 @@
 Reviewing tracks
 if we wanted to create a 3x3 grid with 100 pixel rows and 100px columns we need to define 3 horizontal tracks with a height of 100 pixels and 3 vertical tracks with a width of 100 px.
 */
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+.item {
+    background-color: hotpink;
+    border: 1px solid black;
+    text-align: center;
+}
+.first-row {
+    background-color: skyblue;
+}
+.last-column {
+    background-color: lightblue;
+}
