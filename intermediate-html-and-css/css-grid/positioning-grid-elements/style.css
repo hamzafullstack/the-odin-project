@@ -44,3 +44,20 @@ To get feel for how items can be positioned we will create a mock floor plan for
     grid-column: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
   background-color: lightblue;
 }
+
+/* third container example code... */
+.container-three {
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: slategrey;
+}
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+#living-room {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    
+}
