@@ -34,3 +34,13 @@ the space in a grid shared by a single row track and a single column track is ca
  by default, each child element of a grid container will occupy one cell...
  
 */
+
+/* Positioning 
+To get feel for how items can be positioned we will create a mock floor plan for an apartment, the grid container divided into a 5x5 grid.. we will use display: inline-grid; here so that our container does not stretch to take up space the way a block level box would. this will just help us better visualize the space..
+*/
+
+.container-one {
+    display: inline-grid;
+    grid-column: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue;
+}
