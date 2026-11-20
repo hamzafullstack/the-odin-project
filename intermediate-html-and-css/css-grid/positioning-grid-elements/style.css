@@ -107,3 +107,4 @@ These properties allow us to use our existing grid lines to tell items how many 
     grid-row-end: 6;
 }
 
+/* we used shorthand properties in #kitchen section without adding start and end,,  */
