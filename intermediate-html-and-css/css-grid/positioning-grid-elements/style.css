@@ -61,3 +61,7 @@ To get feel for how items can be positioned we will create a mock floor plan for
     grid-column-end: 6;
     
 }
+
+/* most of our rooms represent a single grid cell. but we have given ourselves a large living room...
+we position this item using grid-column-start and grid-column-end.. Their property values represents the column grid lines we wish it start and end with...
+*/
