@@ -125,3 +125,10 @@ there is shorthand for everything you learned grid column start and end etc shor
 instead of using the grid lines to position all the items in a grid, we can create a visual layout of the grid in words...
 to do this we give each item on the grid a name using grid-area...
 */
+
+#living-room-demo {
+    grid-area: living-room;
+}
+/* 
+we could do this to all of our grid items and give each room a grid-area value as a name.. then we can map out the whole structure with the grid container using grid-template-areas...
+*/
