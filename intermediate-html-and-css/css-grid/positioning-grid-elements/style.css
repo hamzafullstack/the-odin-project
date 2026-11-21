@@ -108,3 +108,9 @@ These properties allow us to use our existing grid lines to tell items how many 
 }
 
 /* we used shorthand properties in #kitchen section without adding start and end,,  */
+
+/* grid-area
+You now know how to position your grid items using row and column lines, but there are other ways to position items and this is where things can get a little confusing...
+
+
+*/
