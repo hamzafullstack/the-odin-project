@@ -132,3 +132,36 @@ to do this we give each item on the grid a name using grid-area...
 /* 
 we could do this to all of our grid items and give each room a grid-area value as a name.. then we can map out the whole structure with the grid container using grid-template-areas...
 */
+
+.container-four {
+    display: inline-grid;
+    grid-template:  40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: hotpink;
+    grid-template-areas:  "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet bathroom kitchen kitchen";
+}
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+#living-room2 {
+    grid-area: living-room;
+    background-color: purple;
+}
+#kitchen2 {
+    grid-area: kitchen;
+}
+#bedroom2 {
+    grid-area: bedroom;
+}
+#bathroom2 {
+    grid-area: bathroom;
+}
+#closet2 {
+    grid-area: closet;
+}
+/* we can use . to indicate empty cells..  */
