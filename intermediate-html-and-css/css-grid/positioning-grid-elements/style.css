@@ -164,4 +164,11 @@ we could do this to all of our grid items and give each room a grid-area value a
 #closet2 {
     grid-area: closet;
 }
-/* we can use . to indicate empty cells..  */
+/* we can use . to indicate empty cells.. 
+a grid item can take up multiple cells forming an area of the grid much like a room with four walls in an apartment..
+*/
+
+/* Wrapping up 
+in the assignments you there is more topics to discover like span and auto, when positioning grid items across tracks...
+there are also properties to justify and align grid items similar to flexbox. the best way to learn this terminology and how to position items is with lots of practice.
+*/
