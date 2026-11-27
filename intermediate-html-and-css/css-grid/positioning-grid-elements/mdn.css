@@ -143,3 +143,11 @@ grid-row-start - grid-column-start - grid-row-end - grid-column-end.
 .area-4 {
   grid-area: 3 / 2 / 4 / 4;
 }
+
+/* counting backwards
+we can also count backwards from the block and inline ends of the grid, for english that would be the right-hand column line and final row line...
+the last lines of the explicit grid can be addressed as -1 you can count back from there so the second last line is -2
+
+do note: the negative values are relevant only to the explicit grid. the final line is the final line of the grid defined by grid-template-columns and grid-template-rows.
+*/
+
