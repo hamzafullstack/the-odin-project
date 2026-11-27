@@ -110,3 +110,9 @@ our shorthand would look like the following code, with no forword slash and seco
   grid-column: 2 / 4;
   grid-row: 3;
 }
+
+/* The grid-area property
+we can take things a step further and define each area with a single property - grid-area.
+The order of the values for grid-area is as follows.
+grid-row-start - grid-column-start - grid-row-end - grid-column-end.
+*/
