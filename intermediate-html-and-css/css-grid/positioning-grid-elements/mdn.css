@@ -54,3 +54,7 @@
   grid-column: 2 / 4;
   grid-row: 3 / 4;
 }
+
+/* default span
+if an item only span one track you can omit the grid-column-end or grid-row-end value.. Grid defaults to spanning one track..
+*/
