@@ -58,3 +58,35 @@
 /* default span
 if an item only span one track you can omit the grid-column-end or grid-row-end value.. Grid defaults to spanning one track..
 */
+
+/* default spans with longhand placement. */
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+.box5,.box6, .box7, .box8 {
+    background-color: rgb(182, 44, 44);
+    /* border: 1px solid; */
+    align-content: center;
+    text-align: center;
+}
+.box5{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.box6 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box7 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.box8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
