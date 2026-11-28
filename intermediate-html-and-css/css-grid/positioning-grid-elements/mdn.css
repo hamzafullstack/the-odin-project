@@ -227,3 +227,35 @@ The gap : if  you only give one value for gap it will apply to both row and colu
 /* using the span keyword
 in addition to specifying the start and end lines by number, you can specify a start line and then the number of tracks you would like the area to span using the span keyword...
 */
+
+.wrapper6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+}
+
+.span-1, .span-2, .span-3, .span-4 {
+  box-shadow:
+    inset 0 -3em 3em rgba(207, 21, 21, 0.3),
+    0 0 0 2px rgb(49, 51, 92),
+    0.3em 0.3em 1em rgba(194, 219, 12, 0.6);
+}
+
+.span-1 {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+.span-2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.span-3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.span-4 {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
