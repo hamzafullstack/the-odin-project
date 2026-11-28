@@ -196,3 +196,21 @@ being able to address the start and end lines of the grid is useful as you can t
   grid-column: 1 / 1;
 }
 
+/* Gutters or alleys
+CSS grids includes the ability to add gutters between column and row tracks with the column-gap and row-gap or gap shorthand.
+REMEMBER: Gaps only appear between tracks of the grid.
+*/
+.wrapper5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  row-gap: 1em;
+  column-gap: 20px;
+}
+.item-1, .item-2, .item-3, .item-4 {
+  box-shadow:
+    inset 0 -3em 3em rgba(49, 15, 182, 0.3),
+    0 0 0 2px rgb(2, 12, 212),
+    0.3em 0.3em 1em rgba(12, 29, 175, 0.6);
+}
+
