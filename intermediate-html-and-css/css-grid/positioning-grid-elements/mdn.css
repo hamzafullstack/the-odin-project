@@ -189,3 +189,10 @@ do note: the negative values are relevant only to the explicit grid. the final l
   grid-row-end: -4;
 }
 
+/* Stretching an item across the grid.
+being able to address the start and end lines of the grid is useful as you can then stretch an item right across the grid with:
+*/
+.item {
+  grid-column: 1 / 1;
+}
+
