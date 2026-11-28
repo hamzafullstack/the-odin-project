@@ -224,3 +224,6 @@ The gap : if  you only give one value for gap it will apply to both row and colu
   gap: 1em 20px;
 }
 
+/* using the span keyword
+in addition to specifying the start and end lines by number, you can specify a start line and then the number of tracks you would like the area to span using the span keyword...
+*/
