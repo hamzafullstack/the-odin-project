@@ -259,3 +259,22 @@ in addition to specifying the start and end lines by number, you can specify a s
   grid-row: 3;
 }
 
+/* 
+we can also use the span keyword with normal properties not just with the shorthand.. 
+*/
+.span-example {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  /* the area will start at line 1 and end 3 lines from line 1; that is, the area will end at line 4.. */
+}
+
+.span-example-two {
+  grid-column-start: 1;
+  grid-row-start: span 3;
+  grid-row-end: 4;
+  /* 
+  we specify the end row line we want the item to finish at and then set the start line as span 3..
+  */
+}
+
