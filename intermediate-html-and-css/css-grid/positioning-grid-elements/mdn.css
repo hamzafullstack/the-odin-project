@@ -214,3 +214,13 @@ REMEMBER: Gaps only appear between tracks of the grid.
     0.3em 0.3em 1em rgba(12, 29, 175, 0.6);
 }
 
+/* The gap shorthand 
+The gap : if  you only give one value for gap it will apply to both row and column if you specify two vlaues the first is used for row-gap, and the second for column-gap.
+*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 1em 20px;
+}
+
